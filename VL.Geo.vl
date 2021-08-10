@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Dz3RuBnkP5VO2i0NHEq8Bk" LanguageVersion="2021.3.3.131" Version="0.128">
+  <NugetDependency Id="HE6dMWRiTJUMiZxGW1qJxA" Location="VL.CoreLib" Version="2021.3.3" />
+  <Patch Id="UeLKJQKKeVkLhNl3Tq17KW">
+    <Canvas Id="U8BJkCRCSbzLicpmCmHAZ6" DefaultCategory="Geo" CanvasType="FullCategory">
+      <!--
+
+    ************************ PseudoMercator ************************
+
+-->
+      <Node Name="PseudoMercator" Bounds="175,-28" Id="EujZk7g92ZwMl42c9JNIJ3">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Geo.Projections" LastSymbolSource="VL.Geo.dll">
+          <AssemblyReference ID="VL.Geo.dll" />
+          <CategoryReference Kind="AssemblyCategory" Name="VL" />
+          <CategoryReference Kind="AssemblyCategory" Name="Geo" />
+          <CategoryReference Kind="AssemblyCategory" Name="Projections" />
+          <Choice Kind="ClassType" Name="PseudoMercator" />
+        </p:TypeAnnotation>
+        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+        <Patch Id="BXaLneCovlzPceaLLbzUuj">
+          <Canvas Id="GzdOZkOeN3SQFAzOSZMb4E" CanvasType="Group">
+            <!--
+
+    ************************ LatitudeToY ************************
+
+-->
+            <Node Name="LatitudeToY" Bounds="104,134,132,82" Id="GYWdlNPcl3qNK79z1TEM9A">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="QQNmEbP9jpjMeH21g4VzGV" ManuallySortedPins="true">
+                <Node Bounds="136,166,71,19" AutoConnect="true" Id="OqlollqpQIjOuycfcsxJHT">
+                  <p:NodeReference LastCategoryFullName="VL.Geo.Projections.PseudoMercator" LastSymbolSource="VL.Geo.dll">
+                    <Choice Kind="OperationNode" Name="LatitudeToY" />
+                    <FullNameCategoryReference ID="VL.Geo.Projections.PseudoMercator" />
+                  </p:NodeReference>
+                  <Pin Id="GQ4MxnWWAqTMdtuwJAqkpR" Name="Latitude" Kind="InputPin" />
+                  <Pin Id="ECYbCFA1QqmO7RpIWQFg0J" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pin Id="TxJTXXcg2mcNVGc8ocu1VN" Name="Latitude" Kind="InputPin" Bounds="19,8" />
+                <ControlPoint Id="Vu5NSGfEZsnMqSaPlFF8tn" Bounds="138,197" />
+                <Link Id="QslJJieozeZMf7R6WFuYdv" Ids="ECYbCFA1QqmO7RpIWQFg0J,Vu5NSGfEZsnMqSaPlFF8tn" />
+                <Pin Id="SDs3rdbH5ugLYYpg5k93aX" Name="Y" Kind="OutputPin" Bounds="230,253" />
+                <Link Id="AuNwuujUzZhOgtDZpA9aIa" Ids="Vu5NSGfEZsnMqSaPlFF8tn,SDs3rdbH5ugLYYpg5k93aX" IsHidden="true" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ YToLatitude ************************
+
+-->
+            <Node Name="YToLatitude" Bounds="304,134,95,86" Id="VxhCLFmKkOcQQnUXJVQprS">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="EpgGENEmYB9LxCpMACZNm2">
+                <Node Bounds="316,157,71,19" AutoConnect="true" Id="DeDZiim9irkLXxv9D3U1Tr">
+                  <p:NodeReference LastCategoryFullName="VL.Geo.Projections.PseudoMercator" LastSymbolSource="VL.Geo.dll">
+                    <Choice Kind="OperationNode" Name="YToLatitude" />
+                    <FullNameCategoryReference ID="VL.Geo.Projections.PseudoMercator" />
+                  </p:NodeReference>
+                  <Pin Id="SUNEJdh9N21OQbhd79L6TE" Name="Y" Kind="InputPin" />
+                  <Pin Id="Jg5meE9CKu4QV6t00Ag3Jd" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pin Id="Ksq0LjRpKcoPtviVCv8xTM" Name="Y" Kind="InputPin" Bounds="19,8" />
+                <ControlPoint Id="KKitfCeHelrL6cehFzjDu9" Bounds="318,203" />
+                <Link Id="RjlBYok8tsSMtNcAHHhow5" Ids="Jg5meE9CKu4QV6t00Ag3Jd,KKitfCeHelrL6cehFzjDu9" />
+                <Pin Id="KEuOEmOj8iYMvZni8y3ONg" Name="Latitude" Kind="OutputPin" Bounds="419,259" />
+                <Link Id="BcvpJGliuuyQUvoHKoBxJY" Ids="KKitfCeHelrL6cehFzjDu9,KEuOEmOj8iYMvZni8y3ONg" IsHidden="true" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="JRK4xRkZKzqLCE7EZWJRIc" HasStateOut="true" IsHidden="true">
+            <Fragment Id="Tn7iuzsMYWMPYv5Zm29Pp9" Patch="GYWdlNPcl3qNK79z1TEM9A" />
+            <Fragment Id="QRGRLQiaWJrLCanAGH03q9" Patch="VxhCLFmKkOcQQnUXJVQprS" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="O8OtujTfCBtN4KzSUVv1yh">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Sx4X4f1qnY5MtPftiJjSsf">
+        <Canvas Id="CtAPoIqagamLuvEkVnsO4A" CanvasType="Group" />
+        <Patch Id="D2vMB1RMYnnN3d85TXzUlT" Name="Create" />
+        <Patch Id="LorbN0s807QNkmAXClyeyS" Name="Update" />
+        <ProcessDefinition Id="SdaiZZvxmVWLNEuc64ZbFL">
+          <Fragment Id="EmQ3Q4FN3IULkrD0u0qtcm" Patch="D2vMB1RMYnnN3d85TXzUlT" Enabled="true" />
+          <Fragment Id="UZ3lioNoucxLZJmUWT8Pxj" Patch="LorbN0s807QNkmAXClyeyS" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Bya5pO1wOZtOYV53YM4wr6" Location="VL.CoreLib" Version="2021.3.3" />
+  <PlatformDependency Id="Q6s3H3hrLUyLqYEzKVAlri" Location="./lib/netstandard2.0/VL.Geo.dll" IsForward="true" />
+</Document>
