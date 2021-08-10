@@ -11,6 +11,9 @@
     <tags>gis</tags>
     <license type="expression">MIT</license>
     <!-- <icon>icon\nugeticon.png</icon> -->
+    <dependencies>
+      <group targetFramework="netstandard2.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\lib\**" target="lib\" exclude="" />
