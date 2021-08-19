@@ -13,6 +13,7 @@
     <!-- <icon>icon\nugeticon.png</icon> -->
     <dependencies>
       <group targetFramework="netstandard2.0" />
+      <dependency id="ProjNet4GeoAPI" version="1.4.1" />
     </dependencies>
   </metadata>
   <files>
