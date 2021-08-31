@@ -5,87 +5,6 @@
     <Canvas Id="U8BJkCRCSbzLicpmCmHAZ6" DefaultCategory="Geo" CanvasType="FullCategory">
       <!--
 
-    ************************ WebMercator (Spherical) ************************
-
--->
-      <Node Name="WebMercator (Spherical)" Bounds="8,76" Id="EujZk7g92ZwMl42c9JNIJ3">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="VL.Geo.Projections" LastSymbolSource="VL.Geo.dll">
-          <AssemblyReference ID="VL.Geo.dll" />
-          <CategoryReference Kind="AssemblyCategory" Name="VL" />
-          <CategoryReference Kind="AssemblyCategory" Name="Geo" />
-          <CategoryReference Kind="AssemblyCategory" Name="Projections" />
-          <Choice Kind="ClassType" Name="PseudoMercator" />
-        </p:TypeAnnotation>
-        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
-        <Patch Id="BXaLneCovlzPceaLLbzUuj">
-          <Canvas Id="GzdOZkOeN3SQFAzOSZMb4E" CanvasType="Group">
-            <!--
-
-    ************************ LatitudeToY ************************
-
--->
-            <Node Name="LatitudeToY" Bounds="104,134,132,82" Id="GYWdlNPcl3qNK79z1TEM9A">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <FullNameCategoryReference ID="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="QQNmEbP9jpjMeH21g4VzGV" ManuallySortedPins="true">
-                <Node Bounds="136,166,71,19" AutoConnect="true" Id="OqlollqpQIjOuycfcsxJHT">
-                  <p:NodeReference LastCategoryFullName="VL.Geo.Projections.PseudoMercator" LastSymbolSource="VL.Geo.dll">
-                    <Choice Kind="OperationNode" Name="LatitudeToY" />
-                    <FullNameCategoryReference ID="VL.Geo.Projections.PseudoMercator" />
-                  </p:NodeReference>
-                  <Pin Id="GQ4MxnWWAqTMdtuwJAqkpR" Name="Latitude" Kind="InputPin" />
-                  <Pin Id="ECYbCFA1QqmO7RpIWQFg0J" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Pin Id="TxJTXXcg2mcNVGc8ocu1VN" Name="Latitude" Kind="InputPin" Bounds="19,8" />
-                <ControlPoint Id="Vu5NSGfEZsnMqSaPlFF8tn" Bounds="138,197" />
-                <Link Id="QslJJieozeZMf7R6WFuYdv" Ids="ECYbCFA1QqmO7RpIWQFg0J,Vu5NSGfEZsnMqSaPlFF8tn" />
-                <Pin Id="SDs3rdbH5ugLYYpg5k93aX" Name="Y" Kind="OutputPin" Bounds="230,253" />
-                <Link Id="AuNwuujUzZhOgtDZpA9aIa" Ids="Vu5NSGfEZsnMqSaPlFF8tn,SDs3rdbH5ugLYYpg5k93aX" IsHidden="true" />
-              </Patch>
-            </Node>
-            <!--
-
-    ************************ YToLatitude ************************
-
--->
-            <Node Name="YToLatitude" Bounds="304,134,95,86" Id="VxhCLFmKkOcQQnUXJVQprS">
-              <p:NodeReference>
-                <Choice Kind="OperationDefinition" Name="Operation" />
-                <FullNameCategoryReference ID="Primitive" />
-              </p:NodeReference>
-              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-              <Patch Id="EpgGENEmYB9LxCpMACZNm2">
-                <Node Bounds="316,157,71,19" AutoConnect="true" Id="DeDZiim9irkLXxv9D3U1Tr">
-                  <p:NodeReference LastCategoryFullName="VL.Geo.Projections.PseudoMercator" LastSymbolSource="VL.Geo.dll">
-                    <Choice Kind="OperationNode" Name="YToLatitude" />
-                    <FullNameCategoryReference ID="VL.Geo.Projections.PseudoMercator" />
-                  </p:NodeReference>
-                  <Pin Id="SUNEJdh9N21OQbhd79L6TE" Name="Y" Kind="InputPin" />
-                  <Pin Id="Jg5meE9CKu4QV6t00Ag3Jd" Name="Output" Kind="OutputPin" />
-                </Node>
-                <Pin Id="Ksq0LjRpKcoPtviVCv8xTM" Name="Y" Kind="InputPin" Bounds="19,8" />
-                <ControlPoint Id="KKitfCeHelrL6cehFzjDu9" Bounds="318,203" />
-                <Link Id="RjlBYok8tsSMtNcAHHhow5" Ids="Jg5meE9CKu4QV6t00Ag3Jd,KKitfCeHelrL6cehFzjDu9" />
-                <Pin Id="KEuOEmOj8iYMvZni8y3ONg" Name="Latitude" Kind="OutputPin" Bounds="419,259" />
-                <Link Id="BcvpJGliuuyQUvoHKoBxJY" Ids="KKitfCeHelrL6cehFzjDu9,KEuOEmOj8iYMvZni8y3ONg" IsHidden="true" />
-              </Patch>
-            </Node>
-          </Canvas>
-          <ProcessDefinition Id="JRK4xRkZKzqLCE7EZWJRIc" HasStateOut="true" IsHidden="true">
-            <Fragment Id="Tn7iuzsMYWMPYv5Zm29Pp9" Patch="GYWdlNPcl3qNK79z1TEM9A" />
-            <Fragment Id="QRGRLQiaWJrLCanAGH03q9" Patch="VxhCLFmKkOcQQnUXJVQprS" />
-          </ProcessDefinition>
-        </Patch>
-      </Node>
-      <!--
-
     ************************ CoordinateTransformation ************************
 
 -->
@@ -1268,6 +1187,304 @@
           </Patch>
         </Node>
       </Canvas>
+      <!--
+
+    ************************ ENUToGeodedic (ENU) ************************
+
+-->
+      <Node Name="ENUToGeodedic (ENU)" Bounds="-114,616,260,271" Id="ApqMCsOg1CXOuU4L6Mh4vs">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="Duzk394DDHALWVnxZXYPDA">
+          <Node Bounds="-102,702,218,19" AutoConnect="true" Id="OoxpzuCtU4pOcTZAbjXI89">
+            <p:NodeReference LastCategoryFullName="VL.Geo.Projections.ENU" LastSymbolSource="VL.Geo.dll">
+              <Choice Kind="OperationNode" Name="LLAfromENU" />
+              <FullNameCategoryReference ID="VL.Geo.Projections.ENU" />
+            </p:NodeReference>
+            <Pin Id="KCbsBMPQgXDLs28AkABtHq" Name="X" Kind="InputPin" />
+            <Pin Id="CTjPZ0Fj3D9O3MWyosHJrD" Name="Y" Kind="InputPin" />
+            <Pin Id="AduLLnQCRPVMs5wTXZWUhn" Name="Z" Kind="InputPin" />
+            <Pin Id="M1HjpLvlpzcOYlcsAunKz3" Name="Reflat" Kind="InputPin" />
+            <Pin Id="FckWKf7kFtWLPCaNNN3mky" Name="Reflon" Kind="InputPin" />
+            <Pin Id="T6YWdJQfFALMjyOkPpSKNC" Name="Refalt" Kind="InputPin" />
+            <Pin Id="SUPDrqxjiLWMpsvO934Ie0" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-102,657,90,19" Id="ChLZP5KV7RgN6JjNPO6RQs">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="DSUVjBsOthqNyxM4J0SBa1" Name="Input" Kind="StateInputPin" />
+            <Pin Id="OZmTDjKXMuvLiN8dknITfE" Name="X" Kind="OutputPin" />
+            <Pin Id="AosbPRwT7cHQBltQCyYGaS" Name="Y" Kind="OutputPin" />
+            <Pin Id="AsYm4N1vApeLEZz15Nxj8m" Name="Z" Kind="OutputPin" />
+          </Node>
+          <Link Id="FqgoDfCl4zwPTR5rf2Qwfo" Ids="OZmTDjKXMuvLiN8dknITfE,KCbsBMPQgXDLs28AkABtHq" />
+          <Link Id="F97QdVcBx2UOczjU11WyFX" Ids="AosbPRwT7cHQBltQCyYGaS,CTjPZ0Fj3D9O3MWyosHJrD" />
+          <Link Id="PUJXXn5A7amND9vtBTzpql" Ids="AsYm4N1vApeLEZz15Nxj8m,AduLLnQCRPVMs5wTXZWUhn" />
+          <ControlPoint Id="TCqp1MtoYEcMz7ohgZcIh5" Bounds="-100,634" />
+          <Link Id="QBY0qGEfuSwNzA1Z9ZaRFj" Ids="TCqp1MtoYEcMz7ohgZcIh5,DSUVjBsOthqNyxM4J0SBa1" />
+          <Link Id="U5XFVYAh74OLeIuuo74Wlw" Ids="FMw7AUUrzrmPjcgZE5n62B,TCqp1MtoYEcMz7ohgZcIh5" IsHidden="true" />
+          <Node Bounds="23,653,90,19" Id="Ovb3gqtMOFxMne2wVNdnyr">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="PVrx9GkxnIHQJoMWe10P8M" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Q2mEOKUWYQ7OCJHqJ5t8B9" Name="X" Kind="OutputPin" />
+            <Pin Id="AsNYXKaa9Y3NKBclJuH9Fb" Name="Y" Kind="OutputPin" />
+            <Pin Id="OV5i5TorJRAN931tVOVwrQ" Name="Z" Kind="OutputPin" />
+          </Node>
+          <Link Id="NcjGwIz4k25P1Xdg4Dy2w9" Ids="Q2mEOKUWYQ7OCJHqJ5t8B9,M1HjpLvlpzcOYlcsAunKz3" />
+          <Link Id="Q30DwrJedllNyUmHyEJ1VP" Ids="AsNYXKaa9Y3NKBclJuH9Fb,FckWKf7kFtWLPCaNNN3mky" />
+          <Link Id="BHR3BCG1CdDM7YRrd0YmuF" Ids="OV5i5TorJRAN931tVOVwrQ,T6YWdJQfFALMjyOkPpSKNC" />
+          <ControlPoint Id="KQXBNVLS8tsN380vOaX1Ob" Bounds="25,634" />
+          <Link Id="EcuQ0o6TobZMI0nBuz3MoG" Ids="KQXBNVLS8tsN380vOaX1Ob,PVrx9GkxnIHQJoMWe10P8M" />
+          <Link Id="D3s5Msa21GRPN3hOwTifrp" Ids="EkNMMqZI82zLz5annK5RUh,KQXBNVLS8tsN380vOaX1Ob" IsHidden="true" />
+          <ControlPoint Id="G0DFmljvebsPrGs4hLL6oa" Bounds="-40,870" />
+          <Link Id="EAajuWCRUAdPJiybyamaui" Ids="G0DFmljvebsPrGs4hLL6oa,L0PYd9Zp6WpOdOPdDZXyC3" IsHidden="true" />
+          <Pin Id="FMw7AUUrzrmPjcgZE5n62B" Name="ENU Coordinate" Kind="InputPin" Bounds="26,574" />
+          <Pin Id="EkNMMqZI82zLz5annK5RUh" Name="Reference Coordinate" Kind="InputPin" Bounds="148,555" />
+          <Pin Id="L0PYd9Zp6WpOdOPdDZXyC3" Name="Output" Kind="OutputPin" Bounds="232,857" />
+          <Node Bounds="-101,756,64,26" Id="Lg1SAC2ilK5QRFr60kTZWr">
+            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetItem" />
+              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="HpHmjgORgwWOMyvlxxQA1n" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SSpaNw8ajjVNJY6zHUCxiK" Name="Index" Kind="InputPin" />
+            <Pin Id="GKzVGjOIyiILQ0KXUerxUD" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="MbzRslSsUWCN0pX12f52FG" Name="Item" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-25,755,64,26" Id="QpRqYurMsMbMZcH9BpTm7z">
+            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetItem" />
+              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="PybuOsUMUInQPOQylG4L42" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Fxuw5SumIevPgOIuu03Z51" Name="Index" Kind="InputPin" DefaultValue="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="CotOQt6aOUJLm7uuI7JKhy" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Nsi8bA5LCZ6NJt6RkK1vwz" Name="Item" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="54,755,64,26" Id="EH72xoyBXjUQZhrIvEJt76">
+            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetItem" />
+              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="Ue9J8zlaVu1NUutMYorMwK" Name="Input" Kind="StateInputPin" />
+            <Pin Id="HYwh8JetQNLPiuYAGYjw8n" Name="Index" Kind="InputPin" DefaultValue="2">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="EDMnJHsqFkzLWzRTpYVzEk" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="RfhiLOisJisNHdkKSfjGwe" Name="Item" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-42,803,78,26" Id="IdiERHZ4VoPQNZ7sfBoLDF">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="FUb63ur7SRLMU3aIfYvMUM" Name="X" Kind="InputPin" />
+            <Pin Id="VDoBSYkRVd4O3enU1y6StH" Name="Y" Kind="InputPin" />
+            <Pin Id="Ep2ujKbTaqeMH38ON8aes4" Name="Z" Kind="InputPin" />
+            <Pin Id="AZMunb7ROW4MmgL8MdZ3rt" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Link Id="QSqms52APHZMAvA3IM6hwU" Ids="RfhiLOisJisNHdkKSfjGwe,Ep2ujKbTaqeMH38ON8aes4" />
+          <Link Id="CS9gswHiQG1MpzMtlnnpRJ" Ids="SUPDrqxjiLWMpsvO934Ie0,HpHmjgORgwWOMyvlxxQA1n" />
+          <Link Id="SuDVdnabE8OLgTxRtcehSv" Ids="SUPDrqxjiLWMpsvO934Ie0,PybuOsUMUInQPOQylG4L42" />
+          <Link Id="OprjmH5ft9aPQJriCPEwyw" Ids="SUPDrqxjiLWMpsvO934Ie0,Ue9J8zlaVu1NUutMYorMwK" />
+          <Link Id="F5BctZnVR6XN2B4xQPhv8c" Ids="AZMunb7ROW4MmgL8MdZ3rt,G0DFmljvebsPrGs4hLL6oa" />
+          <Link Id="VW4spozDGP6P2HvWKcEKN0" Ids="MbzRslSsUWCN0pX12f52FG,VDoBSYkRVd4O3enU1y6StH" />
+          <Link Id="UI5EXpVI2f9NLqocyMb75F" Ids="Nsi8bA5LCZ6NJt6RkK1vwz,FUb63ur7SRLMU3aIfYvMUM" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ GeodedicToENU (ENU) ************************
+
+-->
+      <Node Name="GeodedicToENU (ENU)" Bounds="-125,297,263,256" Id="TazGM7dKzu8QX8UjIeT359">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="BG1KZM9khJsL7GcWeF36LJ">
+          <Node Bounds="-113,385,218,19" AutoConnect="true" Id="QVZeKr8Y0eNMhH3JqGswfH">
+            <p:NodeReference LastCategoryFullName="VL.Geo.Projections.ENU" LastSymbolSource="VL.Geo.dll">
+              <Choice Kind="OperationNode" Name="ENUfromLLA" />
+              <FullNameCategoryReference ID="VL.Geo.Projections.ENU" />
+            </p:NodeReference>
+            <Pin Id="Lq768kXDnHdOU55dmWZ0i8" Name="Lat" Kind="InputPin" />
+            <Pin Id="UoB60TWsEjbN85ELZ8K8M0" Name="Lon" Kind="InputPin" />
+            <Pin Id="Q7KSoO3SpW1O1F35eFpFCv" Name="Alt" Kind="InputPin" />
+            <Pin Id="Kso0w5AyNDFMZMWpq9ekcx" Name="Reflat" Kind="InputPin" />
+            <Pin Id="AVqhIdDtXucMAgdzUraOJA" Name="Reflon" Kind="InputPin" />
+            <Pin Id="RtKf2ENuORQLs1rKaZis4a" Name="Refalt" Kind="InputPin" />
+            <Pin Id="O8xTsHAxQ5fLQ3e6cN6NVt" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-113,343,90,19" Id="B5Qf9mumsQHQDoKPeutXFc">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="F2pNnEEuKz3NGvyYjeYCH2" Name="Input" Kind="StateInputPin" />
+            <Pin Id="HHqxqGP1spcM5iZqnoSxBu" Name="X" Kind="OutputPin" />
+            <Pin Id="SInN2LoQ8HILrQWoaGzC5I" Name="Y" Kind="OutputPin" />
+            <Pin Id="T8BXDFDygWtOMp2mvaIYd0" Name="Z" Kind="OutputPin" />
+          </Node>
+          <Link Id="AsgHOv6ft5CP2Zg1MGg2ZS" Ids="T8BXDFDygWtOMp2mvaIYd0,Q7KSoO3SpW1O1F35eFpFCv" />
+          <ControlPoint Id="Ki6F8wWYIQjNYaG89FKOIy" Bounds="-111,315" />
+          <Link Id="GDYd1wPuLQDLQQYXbpUIxd" Ids="Ki6F8wWYIQjNYaG89FKOIy,F2pNnEEuKz3NGvyYjeYCH2" />
+          <Link Id="VLbfG6Sslh9ObjpDwvJiiL" Ids="EKRHqiEbJlGM5B2IEyB7jy,Ki6F8wWYIQjNYaG89FKOIy" IsHidden="true" />
+          <Node Bounds="15,343,90,19" Id="D6FpbRxD8Z4MQiRp1WHJbX">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="Bx9eCE30WM6NxpaUghqYvX" Name="Input" Kind="StateInputPin" />
+            <Pin Id="DtYBmkGvY78Li5n0iVP5QR" Name="X" Kind="OutputPin" />
+            <Pin Id="I9sNerdaYBDLjExZxRKdRc" Name="Y" Kind="OutputPin" />
+            <Pin Id="OUsI6It9R0GQSVLLFANl6R" Name="Z" Kind="OutputPin" />
+          </Node>
+          <Link Id="AhEFP0J3eFHPm6DsTYF8GL" Ids="OUsI6It9R0GQSVLLFANl6R,RtKf2ENuORQLs1rKaZis4a" />
+          <ControlPoint Id="AVEs3quBWO7L6KVQRhlxeo" Bounds="17,315" />
+          <Link Id="JITTtT8wCr4NsNWiFWNv1d" Ids="AVEs3quBWO7L6KVQRhlxeo,Bx9eCE30WM6NxpaUghqYvX" />
+          <Link Id="HgECz8s1zdjPSgxByZAMxT" Ids="LHyfLp5ssiNNgBjWw5aasv,AVEs3quBWO7L6KVQRhlxeo" IsHidden="true" />
+          <ControlPoint Id="SCKEvgKYcRhLtoticMgW8v" Bounds="-52,536" />
+          <Link Id="AetMr41H93jPJwKwbjahIZ" Ids="SCKEvgKYcRhLtoticMgW8v,JaXYKP2CoPSL8h3rg7L5yQ" IsHidden="true" />
+          <Link Id="RgHarihnOHINx7K28xZfsL" Ids="SInN2LoQ8HILrQWoaGzC5I,Lq768kXDnHdOU55dmWZ0i8" />
+          <Link Id="IJvnOHU2Ou8QX7RDRlf23F" Ids="HHqxqGP1spcM5iZqnoSxBu,UoB60TWsEjbN85ELZ8K8M0" />
+          <Link Id="F30OzWUt2KsPtBsqOu3atR" Ids="I9sNerdaYBDLjExZxRKdRc,Kso0w5AyNDFMZMWpq9ekcx" />
+          <Link Id="ANUxFiOLZPzPvsWcsI34Rr" Ids="DtYBmkGvY78Li5n0iVP5QR,AVqhIdDtXucMAgdzUraOJA" />
+          <Pin Id="EKRHqiEbJlGM5B2IEyB7jy" Name="Geodedic Coordinate" Kind="InputPin" Bounds="56,448" />
+          <Pin Id="LHyfLp5ssiNNgBjWw5aasv" Name="Reference Coordinate" Kind="InputPin" Bounds="186,443" />
+          <Pin Id="JaXYKP2CoPSL8h3rg7L5yQ" Name="Output" Kind="OutputPin" Bounds="114,517" />
+          <Node Bounds="-113,440,64,26" Id="QfiPLXPkr3gOHOk5gZGQTa">
+            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetItem" />
+              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="U23Wg36AONmL2nvndYkqK2" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SUiGcSaLxSZMrVXr6bdpiD" Name="Index" Kind="InputPin" />
+            <Pin Id="LIacagZyCHROLHqNsJa3Nb" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="J8owFBBNo9ZMHJNUJTRktl" Name="Item" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-37,439,64,26" Id="M1yYnswJZQHORqosy1dz36">
+            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetItem" />
+              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="FUIbgXiRMYRM2WUITBxsLa" Name="Input" Kind="StateInputPin" />
+            <Pin Id="E9T81yB7y2uM8ZYpOsiHEp" Name="Index" Kind="InputPin" DefaultValue="1">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="T2QJMcpxFuFOUQ8jBLl1hR" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="UuqlFEQv0TSN3TN6wy8R1j" Name="Item" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="42,439,64,26" Id="CCeh8cgylFKMFlTYmreI0w">
+            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetItem" />
+              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="ENRQR6M7dYUN5wjXcO1JK5" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Ay61OJIpgK8LIvx2WE5xVr" Name="Index" Kind="InputPin" DefaultValue="2">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="I9V48BgtsM9QPZ2mApWw2y" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="KdZguWrNO10PoHvVIP7rig" Name="Item" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="-54,487,78,26" Id="LNJmUK3iQcnPvTOLwzyIuR">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="EhlEb3HGSgZLf23Gz5cZR8" Name="X" Kind="InputPin" />
+            <Pin Id="LmkDzXnffxUPWGf5sw8JRI" Name="Y" Kind="InputPin" />
+            <Pin Id="Htlqx9dCtJLLtkMEp5Q8rv" Name="Z" Kind="InputPin" />
+            <Pin Id="SiTXYFnkHIPMPchWddTxVb" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Link Id="IXDPv7qjtZlM4D01w0Lnu3" Ids="J8owFBBNo9ZMHJNUJTRktl,EhlEb3HGSgZLf23Gz5cZR8" />
+          <Link Id="MSi6wiqHBhaPnJjBfNLBsd" Ids="UuqlFEQv0TSN3TN6wy8R1j,LmkDzXnffxUPWGf5sw8JRI" />
+          <Link Id="VvonRJk9YD8NO1jveYKsFE" Ids="KdZguWrNO10PoHvVIP7rig,Htlqx9dCtJLLtkMEp5Q8rv" />
+          <Link Id="H4ISKyk8qEELK79KYfqEWx" Ids="O8xTsHAxQ5fLQ3e6cN6NVt,U23Wg36AONmL2nvndYkqK2" />
+          <Link Id="GEbmyp2SjOjOb2Mn8S7HFf" Ids="O8xTsHAxQ5fLQ3e6cN6NVt,FUIbgXiRMYRM2WUITBxsLa" />
+          <Link Id="Fqa5dkF7RiMPGMlvBOZUbD" Ids="O8xTsHAxQ5fLQ3e6cN6NVt,ENRQR6M7dYUN5wjXcO1JK5" />
+          <Link Id="Gm0ZeOWBjhfMhLeIlL1Lfg" Ids="SiTXYFnkHIPMPchWddTxVb,SCKEvgKYcRhLtoticMgW8v" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ LatitudeToY (WebMercator Spherical) ************************
+
+-->
+      <Node Name="LatitudeToY (WebMercator Spherical)" Bounds="548,695,132,82" Id="UJD95XUtrtDQOhKtHhx0CG">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="SpXm8yRHkhoOLbckKtTdpG" ManuallySortedPins="true">
+          <Node Bounds="580,727,71,19" AutoConnect="true" Id="TyOrcmnd2EvNOAe4Cdl6IF">
+            <p:NodeReference LastCategoryFullName="VL.Geo.Projections.PseudoMercator" LastSymbolSource="VL.Geo.dll">
+              <Choice Kind="OperationNode" Name="LatitudeToY" />
+              <FullNameCategoryReference ID="VL.Geo.Projections.PseudoMercator" />
+            </p:NodeReference>
+            <Pin Id="LQwLyPdapCEPztFYrVLFEo" Name="Latitude" Kind="InputPin" />
+            <Pin Id="Ga4V9IG7J9aLtYoGI1lZGB" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pin Id="TOt6DQkCvjkMzBxsE0QrOz" Name="Latitude" Kind="InputPin" Bounds="19,8" />
+          <ControlPoint Id="KioNHC7leujNtN8xBZudtv" Bounds="582,758" />
+          <Link Id="TM3wjGrMrJiOvgEvUwX3J2" Ids="Ga4V9IG7J9aLtYoGI1lZGB,KioNHC7leujNtN8xBZudtv" />
+          <Pin Id="Ccjfbhhs6bHNthHlpWwVDj" Name="Y" Kind="OutputPin" Bounds="230,253" />
+          <Link Id="D3eZQnip9YOLG09umYW6P0" Ids="KioNHC7leujNtN8xBZudtv,Ccjfbhhs6bHNthHlpWwVDj" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ YToLatitude (WebMercator Spherical) ************************
+
+-->
+      <Node Name="YToLatitude (WebMercator Spherical)" Bounds="826,689,95,86" Id="VBsMSFSZJguQOFrjCw5yJu">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="MPUUjf4Q4OiP2JXBA4KpAi">
+          <Node Bounds="838,712,71,19" AutoConnect="true" Id="Krm9AFggO6iOLoYG7t5hMl">
+            <p:NodeReference LastCategoryFullName="VL.Geo.Projections.PseudoMercator" LastSymbolSource="VL.Geo.dll">
+              <Choice Kind="OperationNode" Name="YToLatitude" />
+              <FullNameCategoryReference ID="VL.Geo.Projections.PseudoMercator" />
+            </p:NodeReference>
+            <Pin Id="RzE0aGPM3x4LOefch8zKEl" Name="Y" Kind="InputPin" />
+            <Pin Id="J2SdjOiKMPtOdVvW6uJ4Ht" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pin Id="Jy0m2fwixgvMyZYZ9coxNM" Name="Y" Kind="InputPin" Bounds="19,8" />
+          <ControlPoint Id="VtOB4Zmk0kmORzxSyYfbm3" Bounds="840,758" />
+          <Link Id="Ls7Q9zY9UjBPQNLYFNmpio" Ids="J2SdjOiKMPtOdVvW6uJ4Ht,VtOB4Zmk0kmORzxSyYfbm3" />
+          <Pin Id="Mc9cNXzSowGQXKVbtwVxbP" Name="Latitude" Kind="OutputPin" Bounds="419,259" />
+          <Link Id="JrO0LkQC3FHPiNY6nJM5bL" Ids="VtOB4Zmk0kmORzxSyYfbm3,Mc9cNXzSowGQXKVbtwVxbP" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 

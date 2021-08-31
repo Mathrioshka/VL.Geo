@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="PKPi04aBLCDMbdA750s1ki" LanguageVersion="2021.3.3.131" Version="0.128">
+  <NugetDependency Id="T5xlSo1zTmXL91SFc50kJw" Location="VL.CoreLib" Version="2021.3.3" />
+  <Patch Id="SGiUhAgmvvhPzJjJo3kZrI">
+    <Canvas Id="QoAPaX7ISOIQZMADnNu6av" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Bi94gYeVka6O9YHKJegopQ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="Ek1tD7aVchEOXp8vQ2RVIx">
+        <Canvas Id="LytnI3ZOyLWMATT155qNs7" CanvasType="Group">
+          <Node Bounds="15,184" Id="JKNpdxsqI6ONddDWs9StgJ">
+            <p:NodeReference LastCategoryFullName="Geo" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GeodedicToENU (ENU)" />
+            </p:NodeReference>
+            <Pin Id="OHYLf8WJYIZMlMRYlb5vmu" Name="Geodedic Coordinate" Kind="InputPin" />
+            <Pin Id="M3xQ3YT9ccPPwJrMA0CidN" Name="Reference Coordinate" Kind="InputPin" />
+            <Pin Id="SDWjiClbCIeOnn2HGo7MAE" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="15,125,78,26" Id="MRd4g6a7USXP5QjqtoY8g5">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="VMlqkXbNGoePWaRPeJm4vJ" Name="X" Kind="InputPin" />
+            <Pin Id="UkLyIrCqMCoN6vhx8axnfc" Name="Y" Kind="InputPin" />
+            <Pin Id="Q9wraOOItTaN21Ri4hihUa" Name="Z" Kind="InputPin" />
+            <Pin Id="MY1KVWfPVhAQEGMs3ihVTH" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="G4fH7mOd7gmNIFS2Fr09YW" Comment="" Bounds="17,96,44,15" ShowValueBox="true" isIOBox="true" Value="7.658">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SxlXiCGxWaGO4dF6B8wqnA" Comment="" Bounds="54,64,54,15" ShowValueBox="true" isIOBox="true" Value="45.976">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="D6WDUpdGmoCLnXiWPuAaCQ" Comment="" Bounds="90,102,64,14" ShowValueBox="true" isIOBox="true" Value="4531">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="179,125,78,26" Id="KwZ9MnY6IwzPUz1Dejl6f2">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="SPyg4zYT3o7LkHryYqnkUN" Name="X" Kind="InputPin" />
+            <Pin Id="ERpSb6M9bGRM5ORdHQpisw" Name="Y" Kind="InputPin" />
+            <Pin Id="NlS48Q3ZZA6LBNJ6wHRDkt" Name="Z" Kind="InputPin" />
+            <Pin Id="BWP2zxVJQSHMm2v2DWbzJg" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="P6GK8KjvEDINcSEAMdInHI" Comment="" Bounds="181,96,44,15" ShowValueBox="true" isIOBox="true" Value="7.75">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="E5oANMDQYSdPIkr7eHo0bV" Comment="" Bounds="218,64,54,15" ShowValueBox="true" isIOBox="true" Value="46.017">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JuQ3NfQG5j9PB857rsctCQ" Comment="" Bounds="254,102,64,15" ShowValueBox="true" isIOBox="true" Value="1673">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Float64" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">4</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="15,234,90,19" Id="EPBVT6Fx3LAQMcJbmXKBGQ">
+            <p:NodeReference LastCategoryFullName="Geo.Coordinate" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromCoordinate (3D Float64)" />
+            </p:NodeReference>
+            <Pin Id="CNsNumIYEh0MwlzQrIOKYQ" Name="Input" Kind="StateInputPin" />
+            <Pin Id="Krr1PcFUNryQV8VTcH3OZV" Name="X" Kind="OutputPin" />
+            <Pin Id="VAxyFQc9ElnOACNubRTEsW" Name="Y" Kind="OutputPin" />
+            <Pin Id="AEMhzZrKW3kNN3CmWaQ781" Name="Z" Kind="OutputPin" />
+          </Node>
+          <Pad Id="CZWLV5FO7ozNAcSvHuLWwS" Comment="" Bounds="17,334,140,30" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">6</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FCEX0CqbJpuMMXhUh2TYc4" Comment="" Bounds="60,295,183,28" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:precision p:Type="Int32">6</p:precision>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ce5GIasdqlNLSMVi84izV7" Comment="" Bounds="102,277,53,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Mmrl5jjRJhaOlhdwS2wjlM" Bounds="-1,-10,314,23" ShowValueBox="true" isIOBox="true" Value="https://stackoverflow.com/questions/53408780/convert-latitude-longitude-altitude-to-local-enu-coordinates-in-python">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UXV4hfplCvSNN01SYspupj" Bounds="-2,-42,133,25" ShowValueBox="true" isIOBox="true" Value="Example taken from">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OPlUax9HyfBPPIVKrCRCmY" Bounds="-3,384,241,25" ShowValueBox="true" isIOBox="true" Value="Results are comparable to pymap3d">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ELWdYT4b7bQP02hpIb6Kjh" Bounds="167,33,133,19" ShowValueBox="true" isIOBox="true" Value="Zermatt, Switzerland">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="S1agSMhv0P8M25VochWDxd" Name="Create" />
+        <Patch Id="IcX6UqsJhjULa8lNpu6RYY" Name="Update" />
+        <ProcessDefinition Id="Cwr9RhUNtQ2LQWGBdMOiLI">
+          <Fragment Id="LV6x4gseTjxPY37YDIOB8L" Patch="S1agSMhv0P8M25VochWDxd" Enabled="true" />
+          <Fragment Id="Jn8ro8h5p3HPAwNkJzqzap" Patch="IcX6UqsJhjULa8lNpu6RYY" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="QPh1d8ERFBFNIzEwmu66sL" Ids="MY1KVWfPVhAQEGMs3ihVTH,OHYLf8WJYIZMlMRYlb5vmu" />
+        <Link Id="PofmiByLhXCPfgJKnIOZav" Ids="G4fH7mOd7gmNIFS2Fr09YW,VMlqkXbNGoePWaRPeJm4vJ" />
+        <Link Id="Tms72ZsDUewOa9fxWw8NGm" Ids="SxlXiCGxWaGO4dF6B8wqnA,UkLyIrCqMCoN6vhx8axnfc" />
+        <Link Id="Cl4Wr4GBoa9PVjDafm94uF" Ids="D6WDUpdGmoCLnXiWPuAaCQ,Q9wraOOItTaN21Ri4hihUa" />
+        <Link Id="RprCLEICSBRPQr6Z6CWqpg" Ids="P6GK8KjvEDINcSEAMdInHI,SPyg4zYT3o7LkHryYqnkUN" />
+        <Link Id="VPiYWmzFOJhN3FUTJsZYAh" Ids="E5oANMDQYSdPIkr7eHo0bV,ERpSb6M9bGRM5ORdHQpisw" />
+        <Link Id="UTs7gfHJDB5LXS6NGW9j9E" Ids="JuQ3NfQG5j9PB857rsctCQ,NlS48Q3ZZA6LBNJ6wHRDkt" />
+        <Link Id="Q7tr97MYHPkM8BUSD9syLp" Ids="BWP2zxVJQSHMm2v2DWbzJg,M3xQ3YT9ccPPwJrMA0CidN" />
+        <Link Id="TzNj7lpAasPLvQzlvXePM6" Ids="SDWjiClbCIeOnn2HGo7MAE,CNsNumIYEh0MwlzQrIOKYQ" />
+        <Link Id="H16rWS1lw8RMBtQ8uf8ddx" Ids="Krr1PcFUNryQV8VTcH3OZV,CZWLV5FO7ozNAcSvHuLWwS" />
+        <Link Id="MCDBzI162LCPl6hw79GdSW" Ids="VAxyFQc9ElnOACNubRTEsW,FCEX0CqbJpuMMXhUh2TYc4" />
+        <Link Id="EfH5g3X58EdM1Q2tBxDihE" Ids="AEMhzZrKW3kNN3CmWaQ781,Ce5GIasdqlNLSMVi84izV7" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="RW0iicdzRPuLKfqqhj5wRh" Location="VL.CoreLib" Version="2021.3.3" />
+  <NugetDependency Id="MpUbputaIyEPtHTvOYUorp" Location="VL.Geo" Version="0.0.0.0" />
+</Document>

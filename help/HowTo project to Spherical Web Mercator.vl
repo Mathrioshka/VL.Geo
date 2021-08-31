@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="JjAz49C0U8XOfS4UDAAIAN">
         <Canvas Id="TA6KrmbK2xuLNqMzwLWP1Z" CanvasType="Group">
-          <Pad Id="LbchXSUdcKNNX3k3YWqOWJ" Comment="Latitude" Bounds="401,221,66,22" ShowValueBox="true" isIOBox="true" Value="55.58416">
+          <Pad Id="LbchXSUdcKNNX3k3YWqOWJ" Comment="Latitude" Bounds="342,222,66,22" ShowValueBox="true" isIOBox="true" Value="55.58416">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -23,28 +23,12 @@
               <p:precision p:Type="Int32">6</p:precision>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="T0MykbkkBvcNZfE9xwPoMI" Comment="Y" Bounds="401,366,86,30" ShowValueBox="true" isIOBox="true">
+          <Pad Id="T0MykbkkBvcNZfE9xwPoMI" Comment="Y" Bounds="422,308,86,30" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:precision p:Type="Int32">4</p:precision>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="399,261,106,26" Id="NUHDRSW2I1mMvdDnlQfYXP">
-            <p:NodeReference LastCategoryFullName="Geo.WebMercator (Spherical)" LastSymbolSource="VL.Geo.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="LatitudeToY" />
-            </p:NodeReference>
-            <Pin Id="P4EaVDzZh71QdKyde7CoOp" Name="Latitude" Kind="InputPin" />
-            <Pin Id="QOE7yiejwhCQUafQBwvDy5" Name="Y" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="550,372,102,26" Id="QIlxJijTDNAL9mXFV07ZpO">
-            <p:NodeReference LastCategoryFullName="Geo.WebMercator (Spherical)" LastSymbolSource="VL.Geo.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="YToLatitude" />
-            </p:NodeReference>
-            <Pin Id="Bsk9oSLCKiFMNNqapWcM1h" Name="Y" Kind="InputPin" />
-            <Pin Id="NrZ4uCo7kPoPy6i5YUUzcG" Name="Latitude" Kind="OutputPin" />
-          </Node>
-          <Pad Id="B45paSFSVamLDb2DL0Virm" Comment="Latitude" Bounds="551,447,66,22" ShowValueBox="true" isIOBox="true" Value="55.58416">
+          <Pad Id="B45paSFSVamLDb2DL0Virm" Comment="Latitude" Bounds="340,399,66,22" ShowValueBox="true" isIOBox="true" Value="55.58416">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
@@ -52,7 +36,7 @@
               <p:precision p:Type="Int32">6</p:precision>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PevWxGZStx9PW2CasfrLN8" Bounds="325,164,346,50" ShowValueBox="true" isIOBox="true" Value="For Spherical Web Mercator only Y axis (Latitude) must be projected, X axis (Longitude) are kept as is.">
+          <Pad Id="PevWxGZStx9PW2CasfrLN8" Bounds="325,164,346,50" ShowValueBox="true" isIOBox="true" Value="For Spherical Web Mercator only Y axis (Latitude) must be projected, X axis (Longitude) is kept as is.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -61,6 +45,22 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="340,262,71,26" Id="RXGH1WfzILnLruo5zO2ZME">
+            <p:NodeReference LastCategoryFullName="Geo" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="LatitudeToY (WebMercator Spherical)" />
+            </p:NodeReference>
+            <Pin Id="R40eGLll3p6QXbZ3seWY1m" Name="Latitude" Kind="InputPin" />
+            <Pin Id="BW1N018RakUPzFCxS3fD9E" Name="Y" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="339,325,71,26" Id="AL4kcUoOMOiNhboI6lJK5y">
+            <p:NodeReference LastCategoryFullName="Geo" LastSymbolSource="VL.Geo.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="YToLatitude (WebMercator Spherical)" />
+            </p:NodeReference>
+            <Pin Id="La2V31dCNC6N25gXfXeS0i" Name="Y" Kind="InputPin" />
+            <Pin Id="MVzgEYjcH5HLbqGiflhass" Name="Latitude" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="BnVro5P7yIfOY52dttBAJC" Name="Create" />
         <Patch Id="CI5CmJWeJuzLRtxMW0FmFv" Name="Update" />
@@ -68,10 +68,10 @@
           <Fragment Id="HZaJhrzjXKEOCKEbqwhhdQ" Patch="BnVro5P7yIfOY52dttBAJC" Enabled="true" />
           <Fragment Id="LKCecVVbCWOLmdbV6YJiry" Patch="CI5CmJWeJuzLRtxMW0FmFv" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="FWgwL99K7XjMFu46pJn5jG" Ids="LbchXSUdcKNNX3k3YWqOWJ,P4EaVDzZh71QdKyde7CoOp" />
-        <Link Id="JPccwV4hy4VLzGl2XkevYv" Ids="QOE7yiejwhCQUafQBwvDy5,T0MykbkkBvcNZfE9xwPoMI" />
-        <Link Id="Ik7UN2DteW2MeURWNSakdx" Ids="QOE7yiejwhCQUafQBwvDy5,Bsk9oSLCKiFMNNqapWcM1h" />
-        <Link Id="Te8ID3cN3uQP3a3OMKN2j1" Ids="NrZ4uCo7kPoPy6i5YUUzcG,B45paSFSVamLDb2DL0Virm" />
+        <Link Id="IF9uGEr8MZ3L503OWNdrNV" Ids="LbchXSUdcKNNX3k3YWqOWJ,R40eGLll3p6QXbZ3seWY1m" />
+        <Link Id="RIlfpAAEWaDOXlk86uhYu8" Ids="BW1N018RakUPzFCxS3fD9E,T0MykbkkBvcNZfE9xwPoMI" />
+        <Link Id="DsQep1uyCiOMlrB0hCzc4L" Ids="BW1N018RakUPzFCxS3fD9E,La2V31dCNC6N25gXfXeS0i" />
+        <Link Id="LNfWxVkl2f0PLe9yClTmBZ" Ids="MVzgEYjcH5HLbqGiflhass,B45paSFSVamLDb2DL0Virm" />
       </Patch>
     </Node>
   </Patch>
