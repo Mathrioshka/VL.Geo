@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Geo</id>
-    <version>0.0.7</version>
+    <version>0.0.8</version>
     <authors>smakhtin</authors>
     <projectUrl>https://github.com/mathrioshka/VL.Geo</projectUrl>
     <repository type="git" url="https://github.com/mathrioshka/VL.Geo.git" branch="master"/>
@@ -14,6 +14,8 @@
     <dependencies>
       <group targetFramework="netstandard2.0">
         <dependency id="ProjNet4GeoAPI" version="1.4.1" />
+        <dependency id="NetTopologySuite" version="2.3.0"/>
+        <dependency id="GeoAPI.Core" version="1.7.5"/>
       </group>
     </dependencies>
   </metadata>
