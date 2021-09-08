@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Geo</id>
-    <version>0.0.8</version>
+    <version>0.0.9</version>
     <authors>smakhtin</authors>
     <projectUrl>https://github.com/mathrioshka/VL.Geo</projectUrl>
     <repository type="git" url="https://github.com/mathrioshka/VL.Geo.git" branch="master"/>
