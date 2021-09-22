@@ -42,7 +42,7 @@
             </Pin>
             <Pin Id="MsvSQQBivzzOR1Q3nNGFWv" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="706,61,102,86" Id="U1YINYxQzoANBHqzF7dS0D">
+          <Node Bounds="706,61,189,86" Id="U1YINYxQzoANBHqzF7dS0D">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -76,7 +76,7 @@
             <Pin Id="UHhE3vSXGckQcJQ5Rnczbu" Name="Input" Kind="StateInputPin" />
             <Pin Id="Nji5D5RalNpLzXtoMkHiNu" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="NicK7eLkzYXN1EoCj500bc" Bounds="678,-89,35,95" ShowValueBox="true" isIOBox="true" Value="200, 60, 60, 200">
+          <Pad Id="NicK7eLkzYXN1EoCj500bc" Bounds="678,-89,35,95" ShowValueBox="true" isIOBox="true" Value="200, 60, 60">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -86,7 +86,7 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SZytT5Zj6TyLzsnDMgQl59" Bounds="758,-82,35,95" ShowValueBox="true" isIOBox="true" Value="180, 140, 260, 180">
+          <Pad Id="SZytT5Zj6TyLzsnDMgQl59" Bounds="758,-82,35,95" ShowValueBox="true" isIOBox="true" Value="180, 140, 260">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -156,25 +156,23 @@
             <Pin Id="GvIIRqvS16DNeUFq9BJPRw" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="NXvWrXe85vbLcGd7dJPltq" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Node Bounds="432,141,51,26" Id="KF4a9pmMMYqOAoQZBBXbao">
-            <p:NodeReference LastCategoryFullName="Geo.Geometry" LastSymbolSource="VL.Geo.vl">
+          <Node Bounds="431,136,39,26" Id="KUyZKYGbzk0PhZZu8oRo2E">
+            <p:NodeReference LastCategoryFullName="Geo.Geometry.Point" LastSymbolSource="VL.Geo.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Point" />
               <Choice Kind="OperationCallFlag" Name="Point" />
-              <CategoryReference Kind="Category" Name="Geometry" NeedsToBeDirectParent="true">
-                <p:OuterCategoryReference Kind="Category" Name="Geo" NeedsToBeDirectParent="true" />
-              </CategoryReference>
             </p:NodeReference>
-            <Pin Id="Mjcq57whTEvNnZttuiUhR3" Name="Coordinate" Kind="InputPin" />
-            <Pin Id="CUoT7rM33OmOxQNvLLfFop" Name="Output" Kind="OutputPin" />
+            <Pin Id="Ma5EpDNaPyTLrAFltKuoT1" Name="Coordinate" Kind="InputPin" />
+            <Pin Id="REPDXmD13isNGolJPvbRel" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="527,173,64,26" Id="VZ4Zv2HZt7hLkltcTgwDfu">
-            <p:NodeReference LastCategoryFullName="Geo.Geometry" LastSymbolSource="VL.Geo.vl">
+          <Node Bounds="719,171,62,26" Id="B7OuoF6DcctOSC8eVCL9Yv">
+            <p:NodeReference LastCategoryFullName="Geo.Geometry.LineString" LastSymbolSource="VL.Geo.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="Geometry" />
-              <Choice Kind="OperationCallFlag" Name="LinearRing" />
+              <CategoryReference Kind="ClassType" Name="LineString" />
+              <Choice Kind="OperationCallFlag" Name="LineString" />
             </p:NodeReference>
-            <Pin Id="QPLzZXDf1ifPVBH4NRnxEn" Name="Points" Kind="InputPin" />
-            <Pin Id="GWHcDLLCUpRLdGzhF5qylc" Name="Output" Kind="OutputPin" />
+            <Pin Id="TEIL5GuX3VqOhyoVEq77va" Name="Points" Kind="InputPin" />
+            <Pin Id="AAT98kHBhSHPJVGpu1DeII" Name="Output" Kind="StateOutputPin" />
           </Node>
         </Canvas>
         <Patch Id="D2vMB1RMYnnN3d85TXzUlT" Name="Create" />
@@ -196,10 +194,10 @@
         <Link Id="GvvPk6AA3EzMu5HNp6yUPq" Ids="ETogXTvFibIPV08OFS3ecs,HgKpY9z7Z4ZLgEZu8jZu4O" />
         <Link Id="ROYY7c77oKnLOV9byu7ego" Ids="PqzhwhXa7FkNRfOiG5E4RA,VlymjPTlj1APZoZKL3zHLe" />
         <Link Id="SUKFlc2b0XYNFpIezd9A0R" Ids="VMF572Ucvj0LEdI1RAxtMk,BgwQsxQ4X02PYYibZt3dN2" />
-        <Link Id="LZeLGtGPaKrLXQsyqkEYOk" Ids="MsvSQQBivzzOR1Q3nNGFWv,Mjcq57whTEvNnZttuiUhR3" />
-        <Link Id="Ue1v49Cmb17LB5nOj6czvU" Ids="CUoT7rM33OmOxQNvLLfFop,Dw2OqH3g7RrOUnlnSVrTh5" />
-        <Link Id="Qw9bFNpNcbNMPtvRgAmT8V" Ids="Q2ZhUB49WpDQLto3UlshXl,QPLzZXDf1ifPVBH4NRnxEn" />
-        <Link Id="IlDCB5pIst9NsSVzAoBv9S" Ids="GWHcDLLCUpRLdGzhF5qylc,GHVyGNQFVh9OT0oeZSPNmf" />
+        <Link Id="C4YZfB5jOesMVlNPNMLyim" Ids="MsvSQQBivzzOR1Q3nNGFWv,Ma5EpDNaPyTLrAFltKuoT1" />
+        <Link Id="TAUuWIXxpJVN646flR5wmr" Ids="REPDXmD13isNGolJPvbRel,Dw2OqH3g7RrOUnlnSVrTh5" />
+        <Link Id="KZZu03GZAbNLRWHr405piQ" Ids="Q2ZhUB49WpDQLto3UlshXl,TEIL5GuX3VqOhyoVEq77va" />
+        <Link Id="LAQ6avSk9TYPZYgtPIROyQ" Ids="AAT98kHBhSHPJVGpu1DeII,GHVyGNQFVh9OT0oeZSPNmf" />
       </Patch>
     </Node>
   </Patch>

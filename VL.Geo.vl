@@ -321,7 +321,7 @@
     ************************ Coordinate ************************
 
 -->
-      <Node Name="Coordinate" Bounds="259,196" Id="QUK5gR9wss5Mnkn1tX3GOf">
+      <Node Name="Coordinate" Bounds="270,376" Id="QUK5gR9wss5Mnkn1tX3GOf">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -993,10 +993,10 @@
       </Node>
       <!--
 
-    ************************ DistanceOperation ************************
+    ************************ DistanceOperation (2D) ************************
 
 -->
-      <Node Name="DistanceOperation" Bounds="260,140" Id="DXjWwnxkTQJLhezDSt7MRB">
+      <Node Name="DistanceOperation (2D)" Bounds="260,140" Id="DXjWwnxkTQJLhezDSt7MRB">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1009,10 +1009,10 @@
           <Canvas Id="B3iB30AZbowLECKdvw5rxb" CanvasType="Group">
             <!--
 
-    ************************ DistanceOperation ************************
+    ************************ DistanceOperation (2D) ************************
 
 -->
-            <Node Name="DistanceOperation" Bounds="240,151,249,126" Id="N4nGZc6qbYBNoPhqaItljd">
+            <Node Name="DistanceOperation (2D)" Bounds="240,151,249,126" Id="N4nGZc6qbYBNoPhqaItljd">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -1041,10 +1041,10 @@
             </Node>
             <!--
 
-    ************************ NearestPoints ************************
+    ************************ NearestPoints (2D) ************************
 
 -->
-            <Node Name="NearestPoints" Bounds="547,152,203,389" Id="E1IJ7HsGDR0NfATDcI6Ql8">
+            <Node Name="NearestPoints (2D)" Bounds="547,152,203,389" Id="E1IJ7HsGDR0NfATDcI6Ql8">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -1127,63 +1127,107 @@
       <Canvas Id="S8aHXNOrOxIOq0xAUmyf7E" Name="Geometry" Position="-1,229">
         <!--
 
-    ************************ Point ************************
+    ************************ LinearRing ************************
 
 -->
-        <Node Name="Point" Bounds="350,161,117,80" Id="CeJgguWvtzUQa4FZTSEA5N">
+        <Node Name="LinearRing" Bounds="160,123" Id="DCMzcXI4b3rQM7jUTqJebR">
           <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
+            <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="O3D91IGhiPBLUhpr4bJX43">
-            <Node Bounds="367,190,46,26" AutoConnect="true" Id="AcoXRcO5uqTOZGDqmi4DJH">
-              <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.Point" LastSymbolSource="NetTopologySuite.dll">
-                <Choice Kind="OperationNode" Name="Create" />
-                <FullNameCategoryReference ID="NetTopologySuite.Geometries.Point" />
-              </p:NodeReference>
-              <Pin Id="BBvtQ8sOYKkPUSCcFjLOKf" Name="Coordinate" Kind="InputPin" />
-              <Pin Id="AJymnQErrgzPQfVIIwwa04" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <Pin Id="DlMfusJGnoUNX0ZPXaDur6" Name="Coordinate" Kind="InputPin" />
-            <Pin Id="HHx36X9jXAROLc2aowjQSQ" Name="Output" Kind="OutputPin" />
-          </Patch>
-        </Node>
-        <!--
+          <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.Geometries" LastSymbolSource="NetTopologySuite.dll">
+            <Choice Kind="TypeFlag" Name="LinearRing" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="ApNs3tTAnzBMxH6tMemUiD">
+            <Canvas Id="KPgE4TiSToZMzmAYXeGj1o" CanvasType="Group">
+              <!--
 
     ************************ LinearRing ************************
 
 -->
-        <Node Name="LinearRing" Bounds="196,158,107,130" Id="ElITtYarxi8OM5v7pt8tZl">
+              <Node Name="LinearRing" Bounds="257,108,107,130" Id="Lv3Rp0GWVMfPiKguTBozmV">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="QNv8iP5FMAONwquzoWxg5J">
+                  <Node Bounds="269,192,54,26" AutoConnect="true" Id="G9cgpj6idqyMhQpgB5DRvG">
+                    <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.LinearRing" LastSymbolSource="NetTopologySuite.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="NetTopologySuite.Geometries.LinearRing" />
+                    </p:NodeReference>
+                    <Pin Id="SB0ZdnE4lBONievJ9sQkZk" Name="Points" Kind="InputPin" />
+                    <Pin Id="FjLBtqFe1CUMi4YSh3Smlm" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="RIE0rocOV9cNnsIDlnYIR7" Bounds="271,126" />
+                  <Link Id="Hs4RmGeWOPBMbFTMUxDA9b" Ids="SNPgvpZEaoeMcV1WAHQEnS,RIE0rocOV9cNnsIDlnYIR7" IsHidden="true" />
+                  <Pin Id="SNPgvpZEaoeMcV1WAHQEnS" Name="Points" Kind="InputPin" Bounds="72,348" />
+                  <Pin Id="V4sqzaRN4iANgtHILkmxcu" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="269,150,83,26" Id="VBXIFgwRH3dLiJM0mLwKow">
+                    <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                      <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    </p:NodeReference>
+                    <Pin Id="Ed8kWBshySRLzFqnQFpC6S" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="MeweA79wrCyPnuXllpVZfz" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="DrDs4ZSlWdOOnlaMgWR0nw" Ids="MeweA79wrCyPnuXllpVZfz,SB0ZdnE4lBONievJ9sQkZk" />
+                  <Link Id="ANmldSKXJsNODxrF49F6M7" Ids="RIE0rocOV9cNnsIDlnYIR7,Ed8kWBshySRLzFqnQFpC6S" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="Fc3vePFpCEgMKC3EbV66va" IsHidden="true">
+              <Fragment Id="LWnnuPbvryvOvHnItG88yN" Patch="Lv3Rp0GWVMfPiKguTBozmV" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Point ************************
+
+-->
+        <Node Name="Point" Bounds="162,172" Id="AiiIE7gKGUCONRollvBZb6">
           <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
+            <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="PiGDOl9zKW2MwB0YPDnYlC">
-            <Node Bounds="208,242,54,26" AutoConnect="true" Id="OWLAy6ms8x2MDYvhQcZp0B">
-              <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.LinearRing" LastSymbolSource="NetTopologySuite.dll">
-                <Choice Kind="OperationNode" Name="Create" />
-                <FullNameCategoryReference ID="NetTopologySuite.Geometries.LinearRing" />
-              </p:NodeReference>
-              <Pin Id="SrMFeLg41noPhjQmDSqRo7" Name="Points" Kind="InputPin" />
-              <Pin Id="PZ1xVLUGAojMEGvNQD3pNr" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <ControlPoint Id="KsXhAx1SQcgNsYlDkSliNy" Bounds="210,176" />
-            <Link Id="LNIUSPZvIB5M2ICPZzPtDV" Ids="RC0i0TPE41bMsd9QED4mvj,KsXhAx1SQcgNsYlDkSliNy" IsHidden="true" />
-            <Pin Id="RC0i0TPE41bMsd9QED4mvj" Name="Points" Kind="InputPin" Bounds="72,348" />
-            <Pin Id="EUJgT5WQwY0OwBwPDC46Sd" Name="Output" Kind="OutputPin" />
-            <Node Bounds="208,200,83,26" Id="QVThaycDCYLMhfyPMrCdCC">
-              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ArrayType" Name="MutableArray" />
-                <Choice Kind="OperationCallFlag" Name="FromSequence" />
-              </p:NodeReference>
-              <Pin Id="LWkIIg7vRkQLX0x5oxDiGT" Name="Input" Kind="StateInputPin" />
-              <Pin Id="RNFnbM7erQ5LftTEHWjmCO" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Link Id="CoS1icFTPDUNHH7ViZB1cp" Ids="RNFnbM7erQ5LftTEHWjmCO,SrMFeLg41noPhjQmDSqRo7" />
-            <Link Id="E7a1riDCy3QPDGlsMlybsW" Ids="KsXhAx1SQcgNsYlDkSliNy,LWkIIg7vRkQLX0x5oxDiGT" />
+          <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.Geometries" LastSymbolSource="NetTopologySuite.dll">
+            <Choice Kind="TypeFlag" Name="Point" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="Qljern9SWLkMTrcLmi1d1U">
+            <Canvas Id="FLk0V5fQVBlQAYVDBP8GpV" CanvasType="Group">
+              <!--
+
+    ************************ Point ************************
+
+-->
+              <Node Name="Point" Bounds="218,149,117,80" Id="J5ggo7cW2LPPiWmbaOmpyP">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="KZ3qMBRO4owOWA73yB4nB5">
+                  <Node Bounds="235,178,46,26" AutoConnect="true" Id="M3Sk1n6aIUaONfwiYmsg4H">
+                    <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.Point" LastSymbolSource="NetTopologySuite.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="NetTopologySuite.Geometries.Point" />
+                    </p:NodeReference>
+                    <Pin Id="Qe1tfIok8wdLTstHrOuxS5" Name="Coordinate" Kind="InputPin" />
+                    <Pin Id="O7Y55cb3J1bLKC61Eozt52" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="HkTnUh6J24tL34k29aJHI9" Name="Coordinate" Kind="InputPin" />
+                  <Pin Id="MLLDRBW7qzWO4iBlZMTvzR" Name="Output" Kind="OutputPin" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="QbZ81XUlTvaNr6orGMjwYD" IsHidden="true">
+              <Fragment Id="Jl6rveiIHLiPuDInj3hrgE" Patch="J5ggo7cW2LPPiWmbaOmpyP" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -1191,36 +1235,58 @@
     ************************ MultiLineString ************************
 
 -->
-        <Node Name="MultiLineString" Bounds="211,348,107,121" Id="CB52S2YgcKwQSaYPvVEwIs">
+        <Node Name="MultiLineString" Bounds="304,124" Id="SPpsWrOcV5JLXDfFNr1hfH">
           <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
+            <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="M5b3EN9K7IPQDjQlcuDW8M">
-            <Node Bounds="223,423,70,26" AutoConnect="true" Id="Ve4StMEH2XSQMxqhWudiTo">
-              <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.MultiLineString" LastSymbolSource="NetTopologySuite.dll">
-                <Choice Kind="OperationNode" Name="Create" />
-                <FullNameCategoryReference ID="NetTopologySuite.Geometries.MultiLineString" />
-              </p:NodeReference>
-              <Pin Id="JZqDzwES2vWLA9c6vnFOml" Name="Line Strings" Kind="InputPin" />
-              <Pin Id="NoDkr3rjYWiOatmAK9i6Ek" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <Pin Id="EYOQHPA1XLDPenFC2Ji4u7" Name="Output" Kind="OutputPin" />
-            <ControlPoint Id="HY3ChTwakXUN9HiNwI4xdD" Bounds="225,366" />
-            <Pin Id="UkhxgzZgpclPFp55Zh1BjL" Name="Line Strings" Kind="InputPin" Bounds="225,389" />
-            <Link Id="Jhvn4JbDYo5PcVX4mYiC4z" Ids="UkhxgzZgpclPFp55Zh1BjL,HY3ChTwakXUN9HiNwI4xdD" IsHidden="true" />
-            <Node Bounds="223,382,83,26" Id="EI6SAAz1849N57j7lwKSev">
-              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ArrayType" Name="MutableArray" />
-                <Choice Kind="OperationCallFlag" Name="FromSequence" />
-              </p:NodeReference>
-              <Pin Id="LvvdIU6WHycPufN8JGomri" Name="Input" Kind="StateInputPin" />
-              <Pin Id="F4i5EkBlBWHQFyhChZAgpH" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Link Id="AYlD1spBcQpPA2mllZSpnR" Ids="HY3ChTwakXUN9HiNwI4xdD,LvvdIU6WHycPufN8JGomri" />
-            <Link Id="I7Mjheq6RmDMe1uB9DOiO6" Ids="F4i5EkBlBWHQFyhChZAgpH,JZqDzwES2vWLA9c6vnFOml" />
+          <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.Geometries" LastSymbolSource="NetTopologySuite.dll">
+            <Choice Kind="TypeFlag" Name="MultiLineString" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="L0XRYDoF5QSOG1fx94ObGA">
+            <Canvas Id="OAdhczCgvyqOXKuKhfOPvK" CanvasType="Group">
+              <!--
+
+    ************************ MultiLineString ************************
+
+-->
+              <Node Name="MultiLineString" Bounds="175,195,107,121" Id="TrGyTmx1j3HOCTh2I6PkPz">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="OP9JrCnqj4NQKXBd3sKsIy">
+                  <Node Bounds="187,270,70,26" AutoConnect="true" Id="AZNbL2KYTTFMesCEWzouQd">
+                    <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.MultiLineString" LastSymbolSource="NetTopologySuite.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="NetTopologySuite.Geometries.MultiLineString" />
+                    </p:NodeReference>
+                    <Pin Id="R8KpApGwqR7Om3JXM4tFUK" Name="Line Strings" Kind="InputPin" />
+                    <Pin Id="Mhv5ke50Y2kQL6V588NXrG" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="SV3ssrlyFw0N1nJHtBZOuT" Name="Output" Kind="OutputPin" />
+                  <ControlPoint Id="Lr6Kzp9tHyJLj3cfmuaMrY" Bounds="189,213" />
+                  <Pin Id="CUe0S40WojfPF58QW7PYVK" Name="Line Strings" Kind="InputPin" Bounds="225,389" />
+                  <Link Id="ABM8wxeE9j0LV5qyeLJdTH" Ids="CUe0S40WojfPF58QW7PYVK,Lr6Kzp9tHyJLj3cfmuaMrY" IsHidden="true" />
+                  <Node Bounds="187,229,83,26" Id="GQ7p1o3MpPwLIWFVEfWC1R">
+                    <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                      <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    </p:NodeReference>
+                    <Pin Id="FQ4ehbKCZ3kM7OaHiYeke1" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="UQ8tAmC5ewaP5DwSTarweQ" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="BnVe5Dp51DXOprdStaYIfV" Ids="Lr6Kzp9tHyJLj3cfmuaMrY,FQ4ehbKCZ3kM7OaHiYeke1" />
+                  <Link Id="TrwAnX9EWeWLT2IED78Lg9" Ids="UQ8tAmC5ewaP5DwSTarweQ,R8KpApGwqR7Om3JXM4tFUK" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="VjfOA52hLs1M1cK2gGEFSv" IsHidden="true">
+              <Fragment Id="NbZE5CtzOgRLEx8qWl7SIw" Patch="TrGyTmx1j3HOCTh2I6PkPz" />
+            </ProcessDefinition>
           </Patch>
         </Node>
         <!--
@@ -1228,36 +1294,58 @@
     ************************ LineString ************************
 
 -->
-        <Node Name="LineString" Bounds="369,346,107,127" Id="SKZnKbmX2yJPNSibjeLslm">
+        <Node Name="LineString" Bounds="303,172" Id="U0vqtrGVrtkOvj90H1r5GM">
           <p:NodeReference>
-            <Choice Kind="OperationDefinition" Name="Operation" />
+            <Choice Kind="ForwardDefinition" Name="Forward" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
-          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
-          <Patch Id="EoSjUSo4WH2QLep9NM2ha9">
-            <Node Bounds="381,427,52,26" AutoConnect="true" Id="FBOcOQNUYRdOGVmDzmz0Wg">
-              <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.LineString" LastSymbolSource="NetTopologySuite.dll">
-                <Choice Kind="OperationNode" Name="Create" />
-                <FullNameCategoryReference ID="NetTopologySuite.Geometries.LineString" />
-              </p:NodeReference>
-              <Pin Id="O4oiCUgd5yxNuVVGlgA81a" Name="Points" Kind="InputPin" />
-              <Pin Id="BznExrcF7DtM8DjrnbuxHp" Name="Output" Kind="StateOutputPin" />
-            </Node>
-            <Pin Id="FIFKg3Z1Q1vL2vi02VtPI6" Name="Output" Kind="OutputPin" />
-            <ControlPoint Id="OypV67bOOVeOJ55SLmCRsV" Bounds="383,364" />
-            <Pin Id="UH8pO7Rbjo6MXigUfPJYVS" Name="Points" Kind="InputPin" Bounds="453,327" />
-            <Link Id="HueK3JVCeUdMvqnxQAnDuy" Ids="UH8pO7Rbjo6MXigUfPJYVS,OypV67bOOVeOJ55SLmCRsV" IsHidden="true" />
-            <Node Bounds="381,382,83,26" Id="CKCXu7DVIlIMD4SKSPhrJQ">
-              <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ArrayType" Name="MutableArray" />
-                <Choice Kind="OperationCallFlag" Name="FromSequence" />
-              </p:NodeReference>
-              <Pin Id="NPKmwS0iJqDL2FmzqgIwTe" Name="Input" Kind="StateInputPin" />
-              <Pin Id="SSfxQRSp2FJLSHRt62lt3R" Name="Result" Kind="OutputPin" />
-            </Node>
-            <Link Id="QuqILmTm5vGPEluIkwjBFj" Ids="OypV67bOOVeOJ55SLmCRsV,NPKmwS0iJqDL2FmzqgIwTe" />
-            <Link Id="LxMeLlmG06UL0bEGi0SdFp" Ids="SSfxQRSp2FJLSHRt62lt3R,O4oiCUgd5yxNuVVGlgA81a" />
+          <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.Geometries" LastSymbolSource="NetTopologySuite.dll">
+            <Choice Kind="TypeFlag" Name="LineString" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="PpRHnojuc5GL4ptfFnLrED">
+            <Canvas Id="CE5XSoWyOFEPQ2VlTHzPQT" CanvasType="Group">
+              <!--
+
+    ************************ LineString ************************
+
+-->
+              <Node Name="LineString" Bounds="146,130,107,127" Id="DzPVsPxqOLLPViMfJNyKVC">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="E3xgwggjssNMABik0jdAPA">
+                  <Node Bounds="158,211,52,26" AutoConnect="true" Id="Lo8rjlYxhl0NM83SsZzGBu">
+                    <p:NodeReference LastCategoryFullName="NetTopologySuite.Geometries.LineString" LastSymbolSource="NetTopologySuite.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="NetTopologySuite.Geometries.LineString" />
+                    </p:NodeReference>
+                    <Pin Id="SEUa6XCQfGfNIp7tTJaxBM" Name="Points" Kind="InputPin" />
+                    <Pin Id="B790GoVPeGANLFQgttfUVh" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="CYvteK21mh1MOS5wgpki6v" Name="Output" Kind="OutputPin" />
+                  <ControlPoint Id="SbxRS2vKUt1Pr5xVHopVpX" Bounds="160,148" />
+                  <Pin Id="F1TkooEeIw7P8A9C68dzQI" Name="Points" Kind="InputPin" Bounds="453,327" />
+                  <Link Id="GdKjcib9y7nNDq8rrtfuTg" Ids="F1TkooEeIw7P8A9C68dzQI,SbxRS2vKUt1Pr5xVHopVpX" IsHidden="true" />
+                  <Node Bounds="158,166,83,26" Id="FXLVcMx095WMGsTBTftupN">
+                    <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                      <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    </p:NodeReference>
+                    <Pin Id="B8HxL1H6GH5MQYzyizPEUe" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="BpToZ3xkQoDQMIrRU7RDGV" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="Bhobs79o4HBP2ZUqQWhA8x" Ids="SbxRS2vKUt1Pr5xVHopVpX,B8HxL1H6GH5MQYzyizPEUe" />
+                  <Link Id="AUzpuD5EqS5MtKKD1ZaJu5" Ids="BpToZ3xkQoDQMIrRU7RDGV,SEUa6XCQfGfNIp7tTJaxBM" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="Df9gudoLgPjPVnBnpd5k3x" IsHidden="true">
+              <Fragment Id="IybaOqABPw6OgeIu33TttA" Patch="DzPVsPxqOLLPViMfJNyKVC" />
+            </ProcessDefinition>
           </Patch>
         </Node>
       </Canvas>
@@ -1557,6 +1645,81 @@
           <Link Id="Ls7Q9zY9UjBPQNLYFNmpio" Ids="J2SdjOiKMPtOdVvW6uJ4Ht,VtOB4Zmk0kmORzxSyYfbm3" />
           <Pin Id="Mc9cNXzSowGQXKVbtwVxbP" Name="Latitude" Kind="OutputPin" Bounds="419,259" />
           <Link Id="JrO0LkQC3FHPiNY6nJM5bL" Ids="VtOB4Zmk0kmORzxSyYfbm3,Mc9cNXzSowGQXKVbtwVxbP" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DistanceOperation (3D) ************************
+
+-->
+      <Node Name="DistanceOperation (3D)" Bounds="258,198" Id="JaQqYBrxkn7PdmdGMIx0Wm">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.Operation.Distance3D" LastSymbolSource="NetTopologySuite.dll">
+          <Choice Kind="TypeFlag" Name="Distance3DOp" />
+        </p:TypeAnnotation>
+        <Patch Id="JeZ6oAOsSvXODPjHPfweQS">
+          <Canvas Id="TRhdWMZz85YPZM6vQwo7PP" CanvasType="Group">
+            <!--
+
+    ************************ DistanceOperation (3D) ************************
+
+-->
+            <Node Name="DistanceOperation (3D)" Bounds="291,271,100,50" Id="U4KKnHA4yikNufnlykufTA">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="Fw8LLqUTrQRNdR5es7XbES">
+                <Node Bounds="291,271,10,10" AutoConnect="true" Id="JRss0tBgXjGLtVn4skOEyu">
+                  <p:NodeReference LastCategoryFullName="NetTopologySuite.Operation.Distance3D.Distance3DOp" LastSymbolSource="NetTopologySuite.dll">
+                    <Choice Kind="OperationNode" Name="Create" />
+                    <FullNameCategoryReference ID="NetTopologySuite.Operation.Distance3D.Distance3DOp" />
+                  </p:NodeReference>
+                  <Pin Id="OEOWGFZHOLoMeWpbN1iTMj" Name="G 0" Kind="InputPin" />
+                  <Pin Id="SY5VM7xHwzvLfd7wSM3Wja" Name="G 1" Kind="InputPin" />
+                  <Pin Id="BxP5gkLMdOYLoYaUjTBiD1" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Pin Id="EWMS1cXyfdhOA1fFKEOF5V" Name="G 0" Kind="InputPin" />
+                <Pin Id="S77pVUS0o5ZL3F1YqeSVUi" Name="G 1" Kind="InputPin" />
+                <Pin Id="RJq77FuLKEDOkJQ2YIuEoS" Name="Output" Kind="OutputPin" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ NearestPoints (3D) ************************
+
+-->
+            <Node Name="NearestPoints (3D)" Bounds="491,245,112,80" Id="H2Vwg5w5V9ZPOBB9X9lhnS">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="B4flt39YHmGON03vUJRCXG">
+                <Node Bounds="503,273,79,26" AutoConnect="true" Id="M5dNnq6oh7WPnukNiHb9II">
+                  <p:NodeReference LastCategoryFullName="NetTopologySuite.Operation.Distance3D.Distance3DOp" LastSymbolSource="NetTopologySuite.dll">
+                    <Choice Kind="OperationNode" Name="NearestPoints" />
+                    <FullNameCategoryReference ID="NetTopologySuite.Operation.Distance3D.Distance3DOp" />
+                    <PinReference Kind="InputPin" Name="this" />
+                  </p:NodeReference>
+                  <Pin Id="BwlpS0lGTWOLRQrsD4b3dA" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="AKbjVGNPdzhLrwret6hKEz" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="ANEbJqotEjrM6GHoQDZyOE" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Pin Id="AcnyIu0BuAdOK8o08gtv4z" Name="Input" Kind="InputPin" />
+                <Pin Id="UDJOtJuLttLLqieHwNGQze" Name="Output" Kind="OutputPin" />
+                <Pin Id="Ml7jc4pmrsULNfFLjMK7NB" Name="Result" Kind="OutputPin" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="SPW6gid7gpfQNLMCuTAPut" IsHidden="true">
+            <Fragment Id="Tkb5CdWNtuTLbGv5cTzZQg" Patch="U4KKnHA4yikNufnlykufTA" Enabled="true" />
+            <Fragment Id="ModpfSHj1leLzJQ9pd0lSO" Patch="H2Vwg5w5V9ZPOBB9X9lhnS" />
+          </ProcessDefinition>
         </Patch>
       </Node>
     </Canvas>
