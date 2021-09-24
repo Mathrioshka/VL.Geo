@@ -78,7 +78,7 @@
           </ProcessDefinition>
         </Patch>
       </Node>
-      <Canvas Id="KL3JWHeHvLhLxAH1myn9f0" Name="CoordinateSystem" Position="-1,135">
+      <Canvas Id="KL3JWHeHvLhLxAH1myn9f0" Name="CoordinateSystem" Position="-128,145">
         <!--
 
     ************************ WGS84 ************************
@@ -102,20 +102,20 @@
           </Patch>
         </Node>
       </Canvas>
-      <Canvas Id="KrTnRS60p6YLKckPJHrGhS" Name="Projection" Position="-1,184">
+      <Canvas Id="KrTnRS60p6YLKckPJHrGhS" Name="Projection" Position="-128,194">
         <!--
 
     ************************ WebMercator ************************
 
 -->
-        <Node Name="WebMercator" Bounds="275,163,132,82" Id="BZfNgO1FkwxNXOaowxxnDM">
+        <Node Name="WebMercator" Bounds="268,172,132,82" Id="BZfNgO1FkwxNXOaowxxnDM">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" Name="Operation" />
             <FullNameCategoryReference ID="Primitive" />
           </p:NodeReference>
           <p:HideCategory p:Type="Boolean">false</p:HideCategory>
           <Patch Id="ROD7C8BBgJSPVriDMR9my1">
-            <Node Bounds="307,195,76,19" AutoConnect="true" Id="SH3dRDw5NCCOJOxQKoUrnf">
+            <Node Bounds="300,204,76,19" AutoConnect="true" Id="SH3dRDw5NCCOJOxQKoUrnf">
               <p:NodeReference LastCategoryFullName="ProjNet.CoordinateSystems.ProjectedCoordinateSystem" LastSymbolSource="ProjNET.dll">
                 <Choice Kind="OperationNode" Name="WebMercator" />
                 <FullNameCategoryReference ID="ProjNet.CoordinateSystems.ProjectedCoordinateSystem" />
@@ -321,7 +321,7 @@
     ************************ Coordinate ************************
 
 -->
-      <Node Name="Coordinate" Bounds="259,196" Id="QUK5gR9wss5Mnkn1tX3GOf">
+      <Node Name="Coordinate" Bounds="262,250" Id="QUK5gR9wss5Mnkn1tX3GOf">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -993,10 +993,10 @@
       </Node>
       <!--
 
-    ************************ DistanceOperation ************************
+    ************************ DistanceOperation (2D) ************************
 
 -->
-      <Node Name="DistanceOperation" Bounds="260,140" Id="DXjWwnxkTQJLhezDSt7MRB">
+      <Node Name="DistanceOperation (2D)" Bounds="260,140" Id="DXjWwnxkTQJLhezDSt7MRB">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1124,7 +1124,7 @@
           </ProcessDefinition>
         </Patch>
       </Node>
-      <Canvas Id="S8aHXNOrOxIOq0xAUmyf7E" Name="Geometry" Position="-1,229">
+      <Canvas Id="S8aHXNOrOxIOq0xAUmyf7E" Name="Geometry" Position="-128,239">
         <!--
 
     ************************ Point ************************
@@ -1557,6 +1557,139 @@
           <Link Id="Ls7Q9zY9UjBPQNLYFNmpio" Ids="J2SdjOiKMPtOdVvW6uJ4Ht,VtOB4Zmk0kmORzxSyYfbm3" />
           <Pin Id="Mc9cNXzSowGQXKVbtwVxbP" Name="Latitude" Kind="OutputPin" Bounds="419,259" />
           <Link Id="JrO0LkQC3FHPiNY6nJM5bL" Ids="VtOB4Zmk0kmORzxSyYfbm3,Mc9cNXzSowGQXKVbtwVxbP" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DistanceOperation (3D) ************************
+
+-->
+      <Node Name="DistanceOperation (3D)" Bounds="262,191" Id="GoR5spRquvKPumzvr9kACn">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.Operation.Distance3D" LastSymbolSource="NetTopologySuite.dll">
+          <Choice Kind="TypeFlag" Name="Distance3DOp" />
+        </p:TypeAnnotation>
+        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+        <Patch Id="TnFYQ5f1tJ7QIFhgEOm0AI">
+          <Canvas Id="GrboALTuXW2OoLBXLmdWsE" CanvasType="Group">
+            <!--
+
+    ************************ DistanceOperation ************************
+
+-->
+            <Node Name="DistanceOperation" Bounds="310,173,170,99" Id="Pv4CdmrYnh2PeppBZnaP1Y">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="IbHfIjC4LCaNPnUx5Hgjrj">
+                <Node Bounds="322,226,85,26" AutoConnect="true" Id="Ry4cMXEMmTTNt5YAV0K0ZX">
+                  <p:NodeReference LastCategoryFullName="NetTopologySuite.Operation.Distance3D.Distance3DOp" LastSymbolSource="NetTopologySuite.dll">
+                    <Choice Kind="OperationNode" Name="Create" />
+                    <FullNameCategoryReference ID="NetTopologySuite.Operation.Distance3D.Distance3DOp" />
+                  </p:NodeReference>
+                  <Pin Id="Sv2hz4LccgDP8XoXBVu41m" Name="G 0" Kind="InputPin" />
+                  <Pin Id="UloGDaKMl1hOXiFTtzxHiH" Name="G 1" Kind="InputPin" />
+                  <Pin Id="RGPqFrkFfcSLkNjQBBJhgN" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <ControlPoint Id="FfqKrjUm3ITOxFhBZGD5Fq" Bounds="324,191" />
+                <ControlPoint Id="CULUVbrNWDPMNdBF6UeeRH" Bounds="404,191" />
+                <Link Id="DOSR6V4sTGMLDAx9TbQy31" Ids="UngYhLm9JYDMKIzZL6hRdU,FfqKrjUm3ITOxFhBZGD5Fq" IsHidden="true" />
+                <Link Id="UqbhBCVYy7kN1pUarilyjM" Ids="IAsycTMHZ83NXnaaNRxThv,CULUVbrNWDPMNdBF6UeeRH" IsHidden="true" />
+                <Pin Id="UngYhLm9JYDMKIzZL6hRdU" Name="Geometry A" Kind="InputPin" Bounds="330,198" />
+                <Pin Id="IAsycTMHZ83NXnaaNRxThv" Name="Geometry B" Kind="InputPin" Bounds="414,201" />
+                <Pin Id="AZFLt0EL52iOEyKJHwirjJ" Name="Output" Kind="OutputPin" />
+                <Link Id="V67enfvEp5oOlkFusj9BD7" Ids="FfqKrjUm3ITOxFhBZGD5Fq,Sv2hz4LccgDP8XoXBVu41m" />
+                <Link Id="E4Hv32TbOyhPvqDuqFdR3F" Ids="CULUVbrNWDPMNdBF6UeeRH,UloGDaKMl1hOXiFTtzxHiH" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ NearestPoints ************************
+
+-->
+            <Node Name="NearestPoints" Bounds="536,174,204,394" Id="I6DotGLBN5iMYxntn9CpPT">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="FvJfM9KyJRaQCigVhvBv6y" ManuallySortedPins="true">
+                <Node Bounds="559,294,115,158" Id="T1mhS3QZXKiPhpiE1z0fwk">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    <CategoryReference Kind="Category" Name="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="MykXaSxGkdTLjAFX235LcS" Name="Condition" Kind="InputPin" />
+                  <Patch Id="Pbl2DBElftxOBxAywnxaEV" ManuallySortedPins="true">
+                    <Patch Id="D5CsTk0gP3yP2EKVN7Fbvl" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="ViyvshOz0LqMTKYW6CKb4j" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="571,354,79,26" AutoConnect="true" Id="DfX7e9IRYCQPudm55OWskf">
+                      <p:NodeReference LastCategoryFullName="NetTopologySuite.Operation.Distance3D.Distance3DOp" LastSymbolSource="NetTopologySuite.dll">
+                        <Choice Kind="OperationNode" Name="NearestPoints" />
+                        <FullNameCategoryReference ID="NetTopologySuite.Operation.Distance3D.Distance3DOp" />
+                        <PinReference Kind="InputPin" Name="this" />
+                      </p:NodeReference>
+                      <Pin Id="JU4G4E0UzqvN1I7VzTSduC" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="JVtkZRkHE15NYFAatoeNEj" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="FrYTi7bAGUOPgy49f1uHfq" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="AzUOicaPrB3NxjZCwF4wiM" Bounds="647,447" Alignment="Bottom" />
+                  <ControlPoint Id="VN24UQr8FBsMmuxfcK1DS0" Bounds="600,301" Alignment="Top" />
+                  <ControlPoint Id="OVPpKi3NaAaLxbVnXKLA00" Bounds="631,301" Name="Output" Alignment="Top" />
+                  <ControlPoint Id="U1bI545p1H2OoHyjzLfY5j" Bounds="573,447" Alignment="Bottom" />
+                  <ControlPoint Id="NxMQrUT5gpxMB0Jr1niGvQ" Bounds="573,301" Alignment="Top" />
+                </Node>
+                <Link Id="RBZOaETCKg9NZgTMC4DlxY" Ids="VN24UQr8FBsMmuxfcK1DS0,AzUOicaPrB3NxjZCwF4wiM" IsFeedback="true" />
+                <Link Id="MTcRiL4IpTiOiSsW2VPbPY" Ids="NxMQrUT5gpxMB0Jr1niGvQ,U1bI545p1H2OoHyjzLfY5j" IsFeedback="true" />
+                <Link Id="ScDSoX55qf0PflfTcPPL1D" Ids="U1bI545p1H2OoHyjzLfY5j,PEiHzykxr5TLERcfjLWGIl" />
+                <ControlPoint Id="PEiHzykxr5TLERcfjLWGIl" Bounds="574,500" />
+                <Link Id="D0JNRb3tnNgNbB7ZiiErHi" Ids="PEiHzykxr5TLERcfjLWGIl,I0TLtzJTlSBMyaZVH5q5Vl" IsHidden="true" />
+                <ControlPoint Id="B9SqfSBzjLgN8vdMcmBgvF" Bounds="647,551" />
+                <Link Id="HXiSMFmcn9AODxrGXR8eZC" Ids="B9SqfSBzjLgN8vdMcmBgvF,PPsAjroIv9rPGZmXbSkSGX" IsHidden="true" />
+                <Pin Id="PPsAjroIv9rPGZmXbSkSGX" Name="Result" Kind="OutputPin" Bounds="458,496" />
+                <Pin Id="I0TLtzJTlSBMyaZVH5q5Vl" Name="Output" Kind="OutputPin" Bounds="390,492" Visibility="Hidden" />
+                <ControlPoint Id="HGSjFdQCrvvN4GZEGTwa3t" Bounds="568,192" />
+                <Pin Id="H0IpZdK3fDINMxVrPCUpZ2" Name="Input" Kind="InputPin" Bounds="385,325" />
+                <Link Id="PMNO99VUenVQOoZRUYarjo" Ids="H0IpZdK3fDINMxVrPCUpZ2,HGSjFdQCrvvN4GZEGTwa3t" IsHidden="true" />
+                <Node Bounds="559,246,65,19" Id="Axupt9q5YUaM7CN4xXM3Jx">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                  </p:NodeReference>
+                  <Pin Id="NNfsHsN8dn5OJEd0gdftdB" Name="X" Kind="InputPin" />
+                  <Pin Id="JBrgzPzbmOMMEFbu12RYVw" Name="Result" Kind="OutputPin" />
+                  <Pin Id="AUTQeKu0T75LoR6d3Hni8T" Name="Not Assigned" Kind="OutputPin" />
+                </Node>
+                <Link Id="BygxGyLal6AQDBp291BCvc" Ids="HGSjFdQCrvvN4GZEGTwa3t,NNfsHsN8dn5OJEd0gdftdB" />
+                <Link Id="N5mpF54NrL3OtfDxpUN8vW" Ids="JBrgzPzbmOMMEFbu12RYVw,MykXaSxGkdTLjAFX235LcS" />
+                <Node Bounds="645,486,83,26" Id="UefbrP52kB8Nal8cgV1toS">
+                  <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="SYf41b9V5WNOjlZp5qMXMy" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="GKJDsFbuTszMn9HjCM8tLL" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="Oh63brParz8N3VEmqWztFg" Ids="AzUOicaPrB3NxjZCwF4wiM,SYf41b9V5WNOjlZp5qMXMy" />
+                <Link Id="UXCaVTCI1ftODCuWuXkPBS" Ids="GKJDsFbuTszMn9HjCM8tLL,B9SqfSBzjLgN8vdMcmBgvF" />
+                <Link Id="MNAjvBwSg2iQK7718VvuZ2" Ids="HGSjFdQCrvvN4GZEGTwa3t,JU4G4E0UzqvN1I7VzTSduC" />
+                <Link Id="UhOZnhJYfcQNVRy751r6Cs" Ids="JVtkZRkHE15NYFAatoeNEj,U1bI545p1H2OoHyjzLfY5j" />
+                <Link Id="QsuheDG2PwjMIRi16Yryx2" Ids="FrYTi7bAGUOPgy49f1uHfq,AzUOicaPrB3NxjZCwF4wiM" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="P59eebw67tiNOLf3rjg99L" IsHidden="true">
+            <Fragment Id="QBgbqEzrmFfMctlPD6EngR" Patch="Pv4CdmrYnh2PeppBZnaP1Y" Enabled="true" />
+            <Fragment Id="RUy1GjXEubUPuSsPvIN4Iy" Patch="I6DotGLBN5iMYxntn9CpPT" />
+          </ProcessDefinition>
         </Patch>
       </Node>
     </Canvas>
