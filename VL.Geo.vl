@@ -321,7 +321,7 @@
     ************************ Coordinate ************************
 
 -->
-      <Node Name="Coordinate" Bounds="262,250" Id="QUK5gR9wss5Mnkn1tX3GOf">
+      <Node Name="Coordinate" Bounds="19,242" Id="QUK5gR9wss5Mnkn1tX3GOf">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1689,6 +1689,156 @@
           <ProcessDefinition Id="P59eebw67tiNOLf3rjg99L" IsHidden="true">
             <Fragment Id="QBgbqEzrmFfMctlPD6EngR" Patch="Pv4CdmrYnh2PeppBZnaP1Y" Enabled="true" />
             <Fragment Id="RUy1GjXEubUPuSsPvIN4Iy" Patch="I6DotGLBN5iMYxntn9CpPT" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ LinearLocation ************************
+
+-->
+      <Node Name="LinearLocation" Bounds="262,277" Id="FaMvCvOGdtbOCKdJfVb5MH">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.LinearReferencing" LastSymbolSource="NetTopologySuite.dll">
+          <Choice Kind="TypeFlag" Name="LinearLocation" />
+        </p:TypeAnnotation>
+        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+        <Patch Id="Pxon3gsEjYLMmTUHoln5yb">
+          <Canvas Id="LfO8m3fe94cLnsGLNyyxdo" CanvasType="Group">
+            <!--
+
+    ************************ SegmentFraction (Float32) ************************
+
+-->
+            <Node Name="SegmentFraction (Float32)" Bounds="321,168,203,120" Id="ScUWqxGbPuEMTTnRW9BcYa">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="BwT7RVWA2D0NZWVkjBUUhj">
+                <Node Bounds="333,191,92,26" AutoConnect="true" Id="U89tE0muNpzMTRb67PHQ9V">
+                  <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LinearLocation" LastSymbolSource="NetTopologySuite.dll">
+                    <Choice Kind="OperationNode" Name="SegmentFraction" />
+                    <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LinearLocation" />
+                  </p:NodeReference>
+                  <Pin Id="OJOMzdma7XdMgJd68nNKcL" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QAzjjNWlAKAMhklFC81t81" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="LQiOBTr2xnsLzf5JWuJ7NG" Name="Segment Fraction" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="IPJ2fRyvXbTN0Glxyr3duW" Bounds="422,271" />
+                <Link Id="HQH74UYCoqFLOpcm3piqNe" Ids="IPJ2fRyvXbTN0Glxyr3duW,ARVDdZhizLsPaN9sXNFnPN" IsHidden="true" />
+                <Pin Id="Bc4fQtvEMitL7ccZ7cgHB9" Name="Input" Kind="InputPin" />
+                <Pin Id="ARVDdZhizLsPaN9sXNFnPN" Name="Segment Fraction" Kind="OutputPin" Bounds="461,370" />
+                <Node Bounds="420,233,62,19" Id="A3sIPi2GJi8LSKEhQMsPb8">
+                  <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                  </p:NodeReference>
+                  <Pin Id="CUzjAx18SAoLfa9FxmxXdP" Name="Input" Kind="InputPin" />
+                  <Pin Id="RLJ4NILIRywQJN8yE3iAHk" Name="Result" Kind="OutputPin" />
+                </Node>
+                <Link Id="QEjgE4uCzCsQWW9yGCzQSo" Ids="LQiOBTr2xnsLzf5JWuJ7NG,CUzjAx18SAoLfa9FxmxXdP" />
+                <Link Id="PUJTxvhwPGhNkGDWkiJpaF" Ids="RLJ4NILIRywQJN8yE3iAHk,IPJ2fRyvXbTN0Glxyr3duW" />
+                <ControlPoint Id="NhlHKaeZ4fNPPtwdBNTIMN" Bounds="335,257" />
+                <Link Id="DDo4l0kTRnjMJMMGJ7YuLo" Ids="QAzjjNWlAKAMhklFC81t81,NhlHKaeZ4fNPPtwdBNTIMN" />
+                <Pin Id="Ari8GLslV2rLAi6Sy2ec9O" Name="Output" Kind="OutputPin" Bounds="365,381" Visibility="Hidden" />
+                <Link Id="KH1dNEEeaBSOWBM0GBvhaX" Ids="NhlHKaeZ4fNPPtwdBNTIMN,Ari8GLslV2rLAi6Sy2ec9O" IsHidden="true" />
+              </Patch>
+            </Node>
+            <!--
+
+    ************************ SegmentIndex ************************
+
+-->
+            <Node Name="SegmentIndex" Bounds="583,168,181,101" Id="VzWSonY9WZtPfLXAYrfvQH">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="QQ887NXkVznOptyCqzwyNC">
+                <Node Bounds="595,191,81,26" AutoConnect="true" Id="Lz8iyMCTrIlP0MDXtPsF8P">
+                  <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LinearLocation" LastSymbolSource="NetTopologySuite.dll">
+                    <Choice Kind="OperationNode" Name="SegmentIndex" />
+                    <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LinearLocation" />
+                  </p:NodeReference>
+                  <Pin Id="NsaSeHSYFJGNq15ddY0Z8M" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MkxD4QjOHxQPXNmYf6X18G" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="M1Xj2DHsuccNHXLzJOiUUV" Name="Segment Index" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="H4Rf6ORtKh1LrWrTzipzqL" Bounds="673,252" />
+                <Link Id="FdkWxacALq0NmIJNV4yRgN" Ids="M1Xj2DHsuccNHXLzJOiUUV,H4Rf6ORtKh1LrWrTzipzqL" />
+                <Link Id="U4gPmrbmRYVLH9JD8MsrrM" Ids="H4Rf6ORtKh1LrWrTzipzqL,EybDYEnuHRINiJB9ZifqmW" IsHidden="true" />
+                <Pin Id="PRNTN9jEPYILCoHuVcgKcJ" Name="Input" Kind="InputPin" />
+                <Pin Id="EybDYEnuHRINiJB9ZifqmW" Name="Segment Index" Kind="OutputPin" Bounds="674,239" />
+                <ControlPoint Id="MV8nxUkbD8SQRMqYaoUnhv" Bounds="597,243" />
+                <Link Id="DDrxmvdJ9LEQBkmxlkEV8Y" Ids="MkxD4QjOHxQPXNmYf6X18G,MV8nxUkbD8SQRMqYaoUnhv" />
+                <Pin Id="Exgf0poIUN4N7oqzk0tR7I" Name="Output" Kind="OutputPin" Bounds="599,249" Visibility="Hidden" />
+                <Link Id="Qn9ekVyX5XHPpnIvyjmQ3t" Ids="MV8nxUkbD8SQRMqYaoUnhv,Exgf0poIUN4N7oqzk0tR7I" IsHidden="true" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="Nv1KbUMuYaRLsUurXsvN7g" IsHidden="true">
+            <Fragment Id="UysH9S8hO9WOz8Jh86C4od" Patch="ScUWqxGbPuEMTTnRW9BcYa" />
+            <Fragment Id="IIR6PNy66QQLBxZW05J8hP" Patch="VzWSonY9WZtPfLXAYrfvQH" />
+          </ProcessDefinition>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ LocationIndexOfPoint ************************
+
+-->
+      <Node Name="LocationIndexOfPoint" Bounds="262,347" Id="Ua4E62Kdu19PvPRCdmezsX">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="NetTopologySuite.LinearReferencing" LastSymbolSource="NetTopologySuite.dll">
+          <Choice Kind="TypeFlag" Name="LocationIndexOfPoint" />
+        </p:TypeAnnotation>
+        <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+        <Patch Id="Q5QpYokw9IhMIFCdpGJkTc">
+          <Canvas Id="HYgGhCaXokNPHYLOYwzVr9" CanvasType="Group">
+            <!--
+
+    ************************ IndexOf ************************
+
+-->
+            <Node Name="IndexOf" Bounds="391,159,160,109" Id="J10VG4u142bLLL94KATNzi">
+              <p:NodeReference>
+                <Choice Kind="OperationDefinition" Name="Operation" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+              <Patch Id="QTF6ziv32sQOzBdnpAkGjZ">
+                <Node Bounds="403,229,52,19" AutoConnect="true" Id="LsbJxDBEKX8NBUT0uBGnI7">
+                  <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LocationIndexOfPoint" LastSymbolSource="NetTopologySuite.dll">
+                    <Choice Kind="OperationNode" Name="IndexOf" />
+                    <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LocationIndexOfPoint" />
+                  </p:NodeReference>
+                  <Pin Id="BxEGl5JOXTVLJeW8WNAR0e" Name="Linear Geom" Kind="InputPin" />
+                  <Pin Id="QgLwAm5rP8JMy7fyf8s7ID" Name="Input Pt" Kind="InputPin" />
+                  <Pin Id="ASIfpltLIndMFxGfrOQVds" Name="Result" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="BkEj5X5iOTWM3NI6J5TnqB" Bounds="405,177" />
+                <Link Id="IYR0LirUAkBMhsoJl7GEuh" Ids="BkEj5X5iOTWM3NI6J5TnqB,BxEGl5JOXTVLJeW8WNAR0e" />
+                <Link Id="AMdmUcj6oPqOJC83H8sZZl" Ids="V6BW2Xzgt4wLqGsn5ArhKd,BkEj5X5iOTWM3NI6J5TnqB" IsHidden="true" />
+                <Pin Id="V6BW2Xzgt4wLqGsn5ArhKd" Name="Linear Geometry" Kind="InputPin" Bounds="408,275" />
+                <Pin Id="Mz4t9f7nlR5Ogi4GEDcQY7" Name="Result" Kind="OutputPin" />
+                <ControlPoint Id="BnCEfLxMXsuOxN9mcxTLTm" Bounds="452,205" />
+                <Link Id="S9qOblFRhUJLvRPGkHmyKy" Ids="BnCEfLxMXsuOxN9mcxTLTm,QgLwAm5rP8JMy7fyf8s7ID" />
+                <Pin Id="TobnIa1pgjGL3oOmqVcgNP" Name="Point Coordinate" Kind="InputPin" Bounds="459,299" />
+                <Link Id="QnILHnbDacdLkcx5ZPqk3l" Ids="TobnIa1pgjGL3oOmqVcgNP,BnCEfLxMXsuOxN9mcxTLTm" IsHidden="true" />
+              </Patch>
+            </Node>
+          </Canvas>
+          <ProcessDefinition Id="BVHMfzXEs5SNEanh6xyQxh" IsHidden="true">
+            <Fragment Id="K5yh1vRLykuO4OxqFEDNri" Patch="J10VG4u142bLLL94KATNzi" />
           </ProcessDefinition>
         </Patch>
       </Node>
