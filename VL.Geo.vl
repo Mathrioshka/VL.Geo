@@ -157,12 +157,12 @@
     ************************ ProjectPoint ************************
 
 -->
-      <Node Name="ProjectPoint" Bounds="516,71,441,555" Id="UnxbfS4nUHAN1PT3IoX8pm">
+      <Node Name="ProjectPoint" Bounds="527,71,430,555" Id="UnxbfS4nUHAN1PT3IoX8pm">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="BJz5O07V2L2O9sjPCbbaOD">
-          <ControlPoint Id="Qr4lhOhsEOpPzq8DHGm9WU" Bounds="530,89" />
+          <ControlPoint Id="Qr4lhOhsEOpPzq8DHGm9WU" Bounds="541,89" />
           <Node Bounds="602,147,65,19" Id="IYhDbrDSgZ1N7idJNiaVAz">
             <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -264,7 +264,7 @@
             <ControlPoint Id="BcftR33kenqOgom9pHBxF6" Bounds="845,567" Alignment="Bottom" />
             <ControlPoint Id="RuRo27xF17lOQGzMhFvxwN" Bounds="846,272" Alignment="Top" />
           </Node>
-          <ControlPoint Id="FxK6IWg2SzQNm0Rl2qjPS4" Bounds="786,121" />
+          <ControlPoint Id="FxK6IWg2SzQNm0Rl2qjPS4" Bounds="790,123" />
           <ControlPoint Id="OAcbCI71Sc1NrJMGz5fg1v" Bounds="845,609" />
           <Node Bounds="603,220,37,19" Id="C32DcbkCC9uNbqybJW2aZr">
             <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
@@ -1713,27 +1713,17 @@
     ************************ SegmentFraction (Float32) ************************
 
 -->
-            <Node Name="SegmentFraction (Float32)" Bounds="321,168,203,120" Id="ScUWqxGbPuEMTTnRW9BcYa">
+            <Node Name="SegmentFraction (Float32)" Bounds="266,63,226,298" Id="ScUWqxGbPuEMTTnRW9BcYa">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="BwT7RVWA2D0NZWVkjBUUhj">
-                <Node Bounds="333,191,92,26" AutoConnect="true" Id="U89tE0muNpzMTRb67PHQ9V">
-                  <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LinearLocation" LastSymbolSource="NetTopologySuite.dll">
-                    <Choice Kind="OperationNode" Name="SegmentFraction" />
-                    <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LinearLocation" />
-                  </p:NodeReference>
-                  <Pin Id="OJOMzdma7XdMgJd68nNKcL" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="QAzjjNWlAKAMhklFC81t81" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="LQiOBTr2xnsLzf5JWuJ7NG" Name="Segment Fraction" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="IPJ2fRyvXbTN0Glxyr3duW" Bounds="422,271" />
+                <ControlPoint Id="IPJ2fRyvXbTN0Glxyr3duW" Bounds="390,344" />
                 <Link Id="HQH74UYCoqFLOpcm3piqNe" Ids="IPJ2fRyvXbTN0Glxyr3duW,ARVDdZhizLsPaN9sXNFnPN" IsHidden="true" />
-                <Pin Id="Bc4fQtvEMitL7ccZ7cgHB9" Name="Input" Kind="InputPin" />
                 <Pin Id="ARVDdZhizLsPaN9sXNFnPN" Name="Segment Fraction" Kind="OutputPin" Bounds="461,370" />
-                <Node Bounds="420,233,62,19" Id="A3sIPi2GJi8LSKEhQMsPb8">
+                <Node Bounds="388,295,62,19" Id="A3sIPi2GJi8LSKEhQMsPb8">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToFloat32" />
@@ -1741,12 +1731,57 @@
                   <Pin Id="CUzjAx18SAoLfa9FxmxXdP" Name="Input" Kind="InputPin" />
                   <Pin Id="RLJ4NILIRywQJN8yE3iAHk" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Link Id="QEjgE4uCzCsQWW9yGCzQSo" Ids="LQiOBTr2xnsLzf5JWuJ7NG,CUzjAx18SAoLfa9FxmxXdP" />
                 <Link Id="PUJTxvhwPGhNkGDWkiJpaF" Ids="RLJ4NILIRywQJN8yE3iAHk,IPJ2fRyvXbTN0Glxyr3duW" />
-                <ControlPoint Id="NhlHKaeZ4fNPPtwdBNTIMN" Bounds="335,257" />
-                <Link Id="DDo4l0kTRnjMJMMGJ7YuLo" Ids="QAzjjNWlAKAMhklFC81t81,NhlHKaeZ4fNPPtwdBNTIMN" />
+                <ControlPoint Id="NhlHKaeZ4fNPPtwdBNTIMN" Bounds="302,301" />
                 <Pin Id="Ari8GLslV2rLAi6Sy2ec9O" Name="Output" Kind="OutputPin" Bounds="365,381" Visibility="Hidden" />
                 <Link Id="KH1dNEEeaBSOWBM0GBvhaX" Ids="NhlHKaeZ4fNPPtwdBNTIMN,Ari8GLslV2rLAi6Sy2ec9O" IsHidden="true" />
+                <Node Bounds="289,186,118,88" Id="C9ji0AgRCX8MQzgaYCJ51u">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    <FullNameCategoryReference ID="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="JOkdNRPBRGDPx5jUqCCuIP" Name="Condition" Kind="InputPin" />
+                  <Patch Id="K9koQuJTN5TOadUG2YQjX1" ManuallySortedPins="true">
+                    <Patch Id="C9OXlobRvjwQWxqvnePdUJ" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="GDFyRz9RyqtLpdsOXg07AS" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="301,213,92,26" AutoConnect="true" Id="U89tE0muNpzMTRb67PHQ9V">
+                      <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LinearLocation" LastSymbolSource="NetTopologySuite.dll">
+                        <Choice Kind="OperationNode" Name="SegmentFraction" />
+                        <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LinearLocation" />
+                      </p:NodeReference>
+                      <Pin Id="OJOMzdma7XdMgJd68nNKcL" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="QAzjjNWlAKAMhklFC81t81" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="LQiOBTr2xnsLzf5JWuJ7NG" Name="Segment Fraction" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="EhifzHqih03PHMfYG6VkD8" Bounds="303,267" Alignment="Bottom" />
+                  <ControlPoint Id="TNjzEtC7oSoQDlrFMeD3WN" Bounds="303,193" Alignment="Top" />
+                  <ControlPoint Id="MDvG3qbNQNVLRmzog3Fy8b" Bounds="390,267" Alignment="Bottom" />
+                  <ControlPoint Id="AIkfxc2h35AMwmbSTKmnZi" Bounds="379,193" Alignment="Top" />
+                </Node>
+                <Link Id="BHgSTu387oiPGGccj1N1wA" Ids="TNjzEtC7oSoQDlrFMeD3WN,EhifzHqih03PHMfYG6VkD8" IsFeedback="true" />
+                <Link Id="Da19Q3kBvbqOYwbMsD4atF" Ids="QAzjjNWlAKAMhklFC81t81,EhifzHqih03PHMfYG6VkD8" />
+                <Link Id="T2ACB1iycj1MuGKAoWnOPU" Ids="EhifzHqih03PHMfYG6VkD8,NhlHKaeZ4fNPPtwdBNTIMN" />
+                <Link Id="DW1Sj2W75kfLxGSAx6sCrQ" Ids="AIkfxc2h35AMwmbSTKmnZi,MDvG3qbNQNVLRmzog3Fy8b" IsFeedback="true" />
+                <Link Id="TWjrA0FxXp8LqrKq9jlnME" Ids="LQiOBTr2xnsLzf5JWuJ7NG,MDvG3qbNQNVLRmzog3Fy8b" />
+                <Link Id="E48XlKfnJUXN3IJROhewHK" Ids="MDvG3qbNQNVLRmzog3Fy8b,CUzjAx18SAoLfa9FxmxXdP" />
+                <Node Bounds="289,148,65,19" Id="U7Wc2ExVOTNLwQDOj4D0cO">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                  </p:NodeReference>
+                  <Pin Id="Vn0Ycbpif4gL9qC1sVDJas" Name="X" Kind="InputPin" />
+                  <Pin Id="L9zTP06BJ5FNaPyCnDSQsr" Name="Result" Kind="OutputPin" />
+                  <Pin Id="Mham8voHxIvNhD5kO02hpI" Name="Not Assigned" Kind="OutputPin" />
+                </Node>
+                <Link Id="GJdZ6xMnKC0O0i0mGNjA3B" Ids="L9zTP06BJ5FNaPyCnDSQsr,JOkdNRPBRGDPx5jUqCCuIP" />
+                <Link Id="IreiBL1AY8xPt7tHq39mBO" Ids="TNjzEtC7oSoQDlrFMeD3WN,OJOMzdma7XdMgJd68nNKcL" />
+                <Link Id="HXGUVsO2DulP4LZcl19XbL" Ids="DBBbNnRpR7SOPS2aBniLF0,TNjzEtC7oSoQDlrFMeD3WN" />
+                <ControlPoint Id="DBBbNnRpR7SOPS2aBniLF0" Bounds="304,81" />
+                <Pin Id="VLMXx6kjHnQQMy5tnkKj07" Name="Input" Kind="InputPin" Bounds="391,154" />
+                <Link Id="R8xzfNfmSjnNu2N5Xbv9Ee" Ids="VLMXx6kjHnQQMy5tnkKj07,DBBbNnRpR7SOPS2aBniLF0" IsHidden="true" />
+                <Link Id="Qye41w63rWgMddzfEYdjoE" Ids="DBBbNnRpR7SOPS2aBniLF0,Vn0Ycbpif4gL9qC1sVDJas" />
               </Patch>
             </Node>
             <!--
@@ -1754,31 +1789,66 @@
     ************************ SegmentIndex ************************
 
 -->
-            <Node Name="SegmentIndex" Bounds="583,168,181,101" Id="VzWSonY9WZtPfLXAYrfvQH">
+            <Node Name="SegmentIndex" Bounds="560,67,204,226" Id="VzWSonY9WZtPfLXAYrfvQH">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="QQ887NXkVznOptyCqzwyNC">
-                <Node Bounds="595,191,81,26" AutoConnect="true" Id="Lz8iyMCTrIlP0MDXtPsF8P">
-                  <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LinearLocation" LastSymbolSource="NetTopologySuite.dll">
-                    <Choice Kind="OperationNode" Name="SegmentIndex" />
-                    <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LinearLocation" />
-                  </p:NodeReference>
-                  <Pin Id="NsaSeHSYFJGNq15ddY0Z8M" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="MkxD4QjOHxQPXNmYf6X18G" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="M1Xj2DHsuccNHXLzJOiUUV" Name="Segment Index" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="H4Rf6ORtKh1LrWrTzipzqL" Bounds="673,252" />
-                <Link Id="FdkWxacALq0NmIJNV4yRgN" Ids="M1Xj2DHsuccNHXLzJOiUUV,H4Rf6ORtKh1LrWrTzipzqL" />
+                <ControlPoint Id="H4Rf6ORtKh1LrWrTzipzqL" Bounds="673,274" />
                 <Link Id="U4gPmrbmRYVLH9JD8MsrrM" Ids="H4Rf6ORtKh1LrWrTzipzqL,EybDYEnuHRINiJB9ZifqmW" IsHidden="true" />
-                <Pin Id="PRNTN9jEPYILCoHuVcgKcJ" Name="Input" Kind="InputPin" />
                 <Pin Id="EybDYEnuHRINiJB9ZifqmW" Name="Segment Index" Kind="OutputPin" Bounds="674,239" />
-                <ControlPoint Id="MV8nxUkbD8SQRMqYaoUnhv" Bounds="597,243" />
-                <Link Id="DDrxmvdJ9LEQBkmxlkEV8Y" Ids="MkxD4QjOHxQPXNmYf6X18G,MV8nxUkbD8SQRMqYaoUnhv" />
+                <ControlPoint Id="MV8nxUkbD8SQRMqYaoUnhv" Bounds="597,276" />
                 <Pin Id="Exgf0poIUN4N7oqzk0tR7I" Name="Output" Kind="OutputPin" Bounds="599,249" Visibility="Hidden" />
                 <Link Id="Qn9ekVyX5XHPpnIvyjmQ3t" Ids="MV8nxUkbD8SQRMqYaoUnhv,Exgf0poIUN4N7oqzk0tR7I" IsHidden="true" />
+                <Node Bounds="583,160,107,88" Id="GKubR5E1P9LMC4opfHmqAu">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    <FullNameCategoryReference ID="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="Mc5N6tc3fzLPzk7mX6nDXz" Name="Condition" Kind="InputPin" />
+                  <Patch Id="Q4VLTRgrTNVLPT6LIJtnMo" ManuallySortedPins="true">
+                    <Patch Id="VtZbdaBpZXGLudlkTaAPIT" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="IVh59afcbJbNqqreRtZuuO" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="595,191,81,26" AutoConnect="true" Id="Lz8iyMCTrIlP0MDXtPsF8P">
+                      <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LinearLocation" LastSymbolSource="NetTopologySuite.dll">
+                        <Choice Kind="OperationNode" Name="SegmentIndex" />
+                        <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LinearLocation" />
+                      </p:NodeReference>
+                      <Pin Id="NsaSeHSYFJGNq15ddY0Z8M" Name="Input" Kind="StateInputPin" />
+                      <Pin Id="MkxD4QjOHxQPXNmYf6X18G" Name="Output" Kind="StateOutputPin" />
+                      <Pin Id="M1Xj2DHsuccNHXLzJOiUUV" Name="Segment Index" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="Tx3pg3lchoDQIGGtzmMORN" Bounds="597,242" Alignment="Bottom" />
+                  <ControlPoint Id="CVvuBMBCjg2LWbgydyHKWM" Bounds="597,166" Alignment="Top" />
+                  <ControlPoint Id="Hb9kOQdKTc3LgB2pCHZJEg" Bounds="673,242" Alignment="Bottom" />
+                  <ControlPoint Id="U0cW0j04PUQPN4rApebYkn" Bounds="672,166" Alignment="Top" />
+                </Node>
+                <Link Id="EUXwa3TytJtL8oRYyet0mP" Ids="CVvuBMBCjg2LWbgydyHKWM,Tx3pg3lchoDQIGGtzmMORN" IsFeedback="true" />
+                <Link Id="PQY4sWRv0bcN7GeATDmzJ8" Ids="MkxD4QjOHxQPXNmYf6X18G,Tx3pg3lchoDQIGGtzmMORN" />
+                <Link Id="SIsSzSOC1EnQKxutQcEAGx" Ids="Tx3pg3lchoDQIGGtzmMORN,MV8nxUkbD8SQRMqYaoUnhv" />
+                <Link Id="Aqe8LqFKMbPLB8J9udRVnR" Ids="U0cW0j04PUQPN4rApebYkn,Hb9kOQdKTc3LgB2pCHZJEg" IsFeedback="true" />
+                <Link Id="RY0lKNseJ5nQLexC9waM6z" Ids="M1Xj2DHsuccNHXLzJOiUUV,Hb9kOQdKTc3LgB2pCHZJEg" />
+                <Link Id="B2vY30koW4lO5UbPO3fAKC" Ids="Hb9kOQdKTc3LgB2pCHZJEg,H4Rf6ORtKh1LrWrTzipzqL" />
+                <Link Id="OVmLu9IKxQWPA32yBfykrT" Ids="CVvuBMBCjg2LWbgydyHKWM,NsaSeHSYFJGNq15ddY0Z8M" />
+                <Link Id="OFFddqRz9FnP5H4BbtGa6Y" Ids="NHCyHSz4JA2PdslQL43XkO,CVvuBMBCjg2LWbgydyHKWM" />
+                <ControlPoint Id="NHCyHSz4JA2PdslQL43XkO" Bounds="597,85" />
+                <Pin Id="SnOFMVkRO3kNoPuS8drMO2" Name="Input" Kind="InputPin" Bounds="601,151" />
+                <Link Id="CxurT7XmkKmLzuiJg2Ni8h" Ids="SnOFMVkRO3kNoPuS8drMO2,NHCyHSz4JA2PdslQL43XkO" IsHidden="true" />
+                <Node Bounds="583,114,65,19" Id="DGxLp2VqTpMLd8cRJejbQO">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                  </p:NodeReference>
+                  <Pin Id="I13su91BLpMPf00fNwASCI" Name="X" Kind="InputPin" />
+                  <Pin Id="Jm3bVf7enhRLZrvEigBcyY" Name="Result" Kind="OutputPin" />
+                  <Pin Id="HMxhGugbfaUNZJf8WLpfLI" Name="Not Assigned" Kind="OutputPin" />
+                </Node>
+                <Link Id="HdS6YZzjQtuPXV7f7dv3EM" Ids="NHCyHSz4JA2PdslQL43XkO,I13su91BLpMPf00fNwASCI" />
+                <Link Id="QwRJuabep2UPKOZvD3Ytnn" Ids="Jm3bVf7enhRLZrvEigBcyY,Mc5N6tc3fzLPzk7mX6nDXz" />
               </Patch>
             </Node>
           </Canvas>
@@ -1809,31 +1879,65 @@
     ************************ IndexOf ************************
 
 -->
-            <Node Name="IndexOf" Bounds="391,159,160,109" Id="J10VG4u142bLLL94KATNzi">
+            <Node Name="IndexOf" Bounds="365,114,227,285" Id="J10VG4u142bLLL94KATNzi">
               <p:NodeReference>
                 <Choice Kind="OperationDefinition" Name="Operation" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <p:HideCategory p:Type="Boolean">false</p:HideCategory>
               <Patch Id="QTF6ziv32sQOzBdnpAkGjZ">
-                <Node Bounds="403,229,52,19" AutoConnect="true" Id="LsbJxDBEKX8NBUT0uBGnI7">
-                  <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LocationIndexOfPoint" LastSymbolSource="NetTopologySuite.dll">
-                    <Choice Kind="OperationNode" Name="IndexOf" />
-                    <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LocationIndexOfPoint" />
-                  </p:NodeReference>
-                  <Pin Id="BxEGl5JOXTVLJeW8WNAR0e" Name="Linear Geom" Kind="InputPin" />
-                  <Pin Id="QgLwAm5rP8JMy7fyf8s7ID" Name="Input Pt" Kind="InputPin" />
-                  <Pin Id="ASIfpltLIndMFxGfrOQVds" Name="Result" Kind="OutputPin" />
-                </Node>
-                <ControlPoint Id="BkEj5X5iOTWM3NI6J5TnqB" Bounds="405,177" />
-                <Link Id="IYR0LirUAkBMhsoJl7GEuh" Ids="BkEj5X5iOTWM3NI6J5TnqB,BxEGl5JOXTVLJeW8WNAR0e" />
+                <ControlPoint Id="BkEj5X5iOTWM3NI6J5TnqB" Bounds="389,132" />
                 <Link Id="AMdmUcj6oPqOJC83H8sZZl" Ids="V6BW2Xzgt4wLqGsn5ArhKd,BkEj5X5iOTWM3NI6J5TnqB" IsHidden="true" />
+                <ControlPoint Id="Tpin4dDim0UPciQtxg3PIS" Bounds="401,382" />
+                <Link Id="Uomrtx015ZaO9Q8EOdIu27" Ids="Tpin4dDim0UPciQtxg3PIS,NnrkCtzHU6VP3zuaT9aERA" IsHidden="true" />
+                <ControlPoint Id="BnCEfLxMXsuOxN9mcxTLTm" Bounds="493,132" />
+                <Link Id="QnILHnbDacdLkcx5ZPqk3l" Ids="VFWRl2ktSRLO239mPBgdz9,BnCEfLxMXsuOxN9mcxTLTm" IsHidden="true" />
                 <Pin Id="V6BW2Xzgt4wLqGsn5ArhKd" Name="Linear Geometry" Kind="InputPin" Bounds="408,275" />
-                <Pin Id="Mz4t9f7nlR5Ogi4GEDcQY7" Name="Result" Kind="OutputPin" />
-                <ControlPoint Id="BnCEfLxMXsuOxN9mcxTLTm" Bounds="452,205" />
-                <Link Id="S9qOblFRhUJLvRPGkHmyKy" Ids="BnCEfLxMXsuOxN9mcxTLTm,QgLwAm5rP8JMy7fyf8s7ID" />
-                <Pin Id="TobnIa1pgjGL3oOmqVcgNP" Name="Point Coordinate" Kind="InputPin" Bounds="459,299" />
-                <Link Id="QnILHnbDacdLkcx5ZPqk3l" Ids="TobnIa1pgjGL3oOmqVcgNP,BnCEfLxMXsuOxN9mcxTLTm" IsHidden="true" />
+                <Pin Id="VFWRl2ktSRLO239mPBgdz9" Name="Point Coordinate" Kind="InputPin" Bounds="459,299" />
+                <Pin Id="NnrkCtzHU6VP3zuaT9aERA" Name="Output" Kind="OutputPin" Bounds="405,375" />
+                <Link Id="M7vqSzQp3jaLOqfF3PZs0w" Ids="BnCEfLxMXsuOxN9mcxTLTm,QgLwAm5rP8JMy7fyf8s7ID" />
+                <Node Bounds="388,243,77,116" Id="CO9NFYx6FmCOFffcmSnr2e">
+                  <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                    <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                    <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                    <FullNameCategoryReference ID="Primitive" />
+                  </p:NodeReference>
+                  <Pin Id="DOhKzQ9l0dQQcxgGjIDkfl" Name="Condition" Kind="InputPin" />
+                  <Patch Id="VszjEoyqtmNOzJx2TjoRJP" ManuallySortedPins="true">
+                    <Patch Id="KMfCQHTBoWQP8xbd57dS40" Name="Create" ManuallySortedPins="true" />
+                    <Patch Id="CVd2KBYcqS8N0n1SIu0Pbn" Name="Then" ManuallySortedPins="true" />
+                    <Node Bounds="401,282,52,19" AutoConnect="true" Id="LsbJxDBEKX8NBUT0uBGnI7">
+                      <p:NodeReference LastCategoryFullName="NetTopologySuite.LinearReferencing.LocationIndexOfPoint" LastSymbolSource="NetTopologySuite.dll">
+                        <Choice Kind="OperationNode" Name="IndexOf" />
+                        <FullNameCategoryReference ID="NetTopologySuite.LinearReferencing.LocationIndexOfPoint" />
+                      </p:NodeReference>
+                      <Pin Id="BxEGl5JOXTVLJeW8WNAR0e" Name="Linear Geom" Kind="InputPin" />
+                      <Pin Id="QgLwAm5rP8JMy7fyf8s7ID" Name="Input Pt" Kind="InputPin" />
+                      <Pin Id="ASIfpltLIndMFxGfrOQVds" Name="Result" Kind="OutputPin" />
+                    </Node>
+                  </Patch>
+                  <ControlPoint Id="V2ar936jiaTPxKY0drlOqA" Bounds="402,353" Alignment="Bottom" />
+                  <ControlPoint Id="NEYlgwN8bBxP2PhlXZhAMm" Bounds="442,249" Alignment="Top" />
+                  <ControlPoint Id="AUSh2Xp0hftNpu1x0UNTDj" Bounds="403,249" Alignment="Top" />
+                  <ControlPoint Id="PyCFfQ7u2D4QawUPnqTr0i" Bounds="427,353" Alignment="Bottom" />
+                </Node>
+                <Link Id="DCjY1sV87I9M6qdSb6Q3iG" Ids="NEYlgwN8bBxP2PhlXZhAMm,V2ar936jiaTPxKY0drlOqA" IsFeedback="true" />
+                <Node Bounds="387,175,65,19" Id="UO0x410XmqaMzLO46SBTNx">
+                  <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                  </p:NodeReference>
+                  <Pin Id="VieApfYq1glM7hNEgcxKMq" Name="X" Kind="InputPin" />
+                  <Pin Id="NEUFdE1pMLkOyr2F0jPIy3" Name="Result" Kind="OutputPin" />
+                  <Pin Id="CPICySlilqKQApynaGrbsw" Name="Not Assigned" Kind="OutputPin" />
+                </Node>
+                <Link Id="GM1oheSXwjmLYifUevCXPY" Ids="BkEj5X5iOTWM3NI6J5TnqB,VieApfYq1glM7hNEgcxKMq" />
+                <Link Id="NrtYJTYqh0iPNnSKyw9SbB" Ids="NEUFdE1pMLkOyr2F0jPIy3,DOhKzQ9l0dQQcxgGjIDkfl" />
+                <Link Id="ESzlQtj0RjYND9m3QAD1JV" Ids="AUSh2Xp0hftNpu1x0UNTDj,PyCFfQ7u2D4QawUPnqTr0i" IsFeedback="true" />
+                <Link Id="Jh9foc8IcmgOYe76E6qIu5" Ids="BkEj5X5iOTWM3NI6J5TnqB,AUSh2Xp0hftNpu1x0UNTDj" />
+                <Link Id="TUORbM7IH93Nw6NpCxWgxl" Ids="AUSh2Xp0hftNpu1x0UNTDj,BxEGl5JOXTVLJeW8WNAR0e" />
+                <Link Id="Gde8kFjiyc9QW8jJ50GDh2" Ids="ASIfpltLIndMFxGfrOQVds,V2ar936jiaTPxKY0drlOqA" />
+                <Link Id="TaErLqeNlmMOlsDH3iyhBL" Ids="V2ar936jiaTPxKY0drlOqA,Tpin4dDim0UPciQtxg3PIS" />
               </Patch>
             </Node>
           </Canvas>
